@@ -72,7 +72,11 @@ void ThreadLoopSync::run()
                 if(ret>0)
                 {
                     readDummyTimes++;
-                    qDebug()<<"first run read dummy data"<<readDummyTimes;
+                    qDebug()<<"threadloopsync.cpp: first run read dummy data"<<readDummyTimes;
+                }
+                else
+                {
+                    qDebug()<<"threadloopsync.cpp: recv err";
                 }
             }
             STATE = 1;
@@ -94,15 +98,14 @@ void ThreadLoopSync::run()
             }
             else
             {
+                qDebug()<<"threadloopsync.cpp: send err";
                 m_outFailures++;
                 STATE = 0;
             }
             break;
 
         case 2:  //启动In传输
-            isRecvData = false;
-
-            while(!isRecvData)
+            while(true)
             {
                 if(m_udpSocket->hasPendingDatagrams())
                 {
@@ -115,10 +118,11 @@ void ThreadLoopSync::run()
                         readLength = bufferInput.length();
                         m_inBytes += readLength/1024; //kByte
                         m_inSeccesses++;
-                        isRecvData = true;
+                        break;
                     }
                     else
                     {
+                        qDebug()<<"threadloopsync.cpp: recv err";
                         m_inFailures++;
                     }
                 }
@@ -177,6 +181,7 @@ void ThreadLoopSync::run()
             }
             else
             {
+                qDebug()<<"threadloopsync.cpp: send != recv";
                 m_loopFailures++;
                 STATE = 0;
             }

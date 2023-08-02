@@ -61,16 +61,15 @@ void ThreadInSync::run()
                     checkOk = true;
                     for(int i=0; i<readLength; i++)
                     {
-                        if(bufferInput[i]!=(char)(counter))
+                        if(bufferInput[i]!=counter)
                         {
                             checkOk = false;
-                            qDebug()<<bufferInput[i]<<"::"<<(char)(counter);
+                            qDebug()<<"i="<<i<<(uint8_t)bufferInput[i]<<"::"<<(uint8_t)(counter);
                             break;
                         }
-
                     }
 
-                    counter++;
+                    counter = bufferInput[0]+1;
                     if(checkOk)
                     {
                         m_inBytes += readLength/1024; //kByte
@@ -82,11 +81,15 @@ void ThreadInSync::run()
                     }
 
                 }
+                else
+                {
+                    qDebug()<<"threadinsync.cpp: recv dataLehgth less";
+                }
 
             }
             else
             {
-                m_inFailures++;
+                qDebug()<<"threadinsync.cpp: recv err";
             }
         }
 
@@ -115,12 +118,14 @@ bool ThreadInSync::inSyncOnce(QByteArray &ba)
         }
         else
         {
+            qDebug()<<"threadinsync.cpp: recv err";
             m_inFailures++;
             return false;
         }
     }
     else
     {
+        qDebug()<<"threadinsync.cpp: no recv data";
         m_inFailures++;
         return false;
     }
