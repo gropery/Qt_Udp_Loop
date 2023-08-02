@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="sync_fifo_2048x32b_synth_1" LaunchDir="E:/ZYNQ/ZYNQ_7020/FPGA_Design/eth_udp_loop/eth_udp_loop.runs/sync_fifo_2048x32b_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

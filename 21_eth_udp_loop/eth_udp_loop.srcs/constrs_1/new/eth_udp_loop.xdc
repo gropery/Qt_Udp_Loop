@@ -1,0 +1,48 @@
+create_clock -period 20.000 -name sys_clk [get_ports sys_clk]
+create_clock -period 8.000 -name eth_rxc [get_ports eth_rxc]
+
+#GE_PL
+set_property -dict {PACKAGE_PIN U18 IOSTANDARD LVCMOS33} [get_ports sys_clk]
+set_property -dict {PACKAGE_PIN J15 IOSTANDARD LVCMOS33} [get_ports sys_rst_n]
+
+set_property -dict {PACKAGE_PIN G14 IOSTANDARD LVCMOS33} [get_ports eth_rst_n]
+set_property -dict {PACKAGE_PIN K17 IOSTANDARD LVCMOS33} [get_ports eth_rxc]
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports eth_rx_ctl]
+set_property -dict {PACKAGE_PIN F19 IOSTANDARD LVCMOS33} [get_ports {eth_rxd[0]}]
+set_property -dict {PACKAGE_PIN F20 IOSTANDARD LVCMOS33} [get_ports {eth_rxd[1]}]
+set_property -dict {PACKAGE_PIN E17 IOSTANDARD LVCMOS33} [get_ports {eth_rxd[2]}]
+set_property -dict {PACKAGE_PIN D18 IOSTANDARD LVCMOS33} [get_ports {eth_rxd[3]}]
+
+set_property -dict {PACKAGE_PIN G19 IOSTANDARD LVCMOS33} [get_ports eth_txc]
+set_property -dict {PACKAGE_PIN E19 IOSTANDARD LVCMOS33} [get_ports eth_tx_ctl]
+set_property -dict {PACKAGE_PIN G20 IOSTANDARD LVCMOS33} [get_ports {eth_txd[0]}]
+set_property -dict {PACKAGE_PIN F16 IOSTANDARD LVCMOS33} [get_ports {eth_txd[1]}]
+set_property -dict {PACKAGE_PIN F17 IOSTANDARD LVCMOS33} [get_ports {eth_txd[2]}]
+set_property -dict {PACKAGE_PIN E18 IOSTANDARD LVCMOS33} [get_ports {eth_txd[3]}]
+
+create_debug_core u_ila_0 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+set_property port_width 64 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_fifo_ctrl/tFpgaWrite[0]} {u_fifo_ctrl/tFpgaWrite[1]} {u_fifo_ctrl/tFpgaWrite[2]} {u_fifo_ctrl/tFpgaWrite[3]} {u_fifo_ctrl/tFpgaWrite[4]} {u_fifo_ctrl/tFpgaWrite[5]} {u_fifo_ctrl/tFpgaWrite[6]} {u_fifo_ctrl/tFpgaWrite[7]} {u_fifo_ctrl/tFpgaWrite[8]} {u_fifo_ctrl/tFpgaWrite[9]} {u_fifo_ctrl/tFpgaWrite[10]} {u_fifo_ctrl/tFpgaWrite[11]} {u_fifo_ctrl/tFpgaWrite[12]} {u_fifo_ctrl/tFpgaWrite[13]} {u_fifo_ctrl/tFpgaWrite[14]} {u_fifo_ctrl/tFpgaWrite[15]} {u_fifo_ctrl/tFpgaWrite[16]} {u_fifo_ctrl/tFpgaWrite[17]} {u_fifo_ctrl/tFpgaWrite[18]} {u_fifo_ctrl/tFpgaWrite[19]} {u_fifo_ctrl/tFpgaWrite[20]} {u_fifo_ctrl/tFpgaWrite[21]} {u_fifo_ctrl/tFpgaWrite[22]} {u_fifo_ctrl/tFpgaWrite[23]} {u_fifo_ctrl/tFpgaWrite[24]} {u_fifo_ctrl/tFpgaWrite[25]} {u_fifo_ctrl/tFpgaWrite[26]} {u_fifo_ctrl/tFpgaWrite[27]} {u_fifo_ctrl/tFpgaWrite[28]} {u_fifo_ctrl/tFpgaWrite[29]} {u_fifo_ctrl/tFpgaWrite[30]} {u_fifo_ctrl/tFpgaWrite[31]} {u_fifo_ctrl/tFpgaWrite[32]} {u_fifo_ctrl/tFpgaWrite[33]} {u_fifo_ctrl/tFpgaWrite[34]} {u_fifo_ctrl/tFpgaWrite[35]} {u_fifo_ctrl/tFpgaWrite[36]} {u_fifo_ctrl/tFpgaWrite[37]} {u_fifo_ctrl/tFpgaWrite[38]} {u_fifo_ctrl/tFpgaWrite[39]} {u_fifo_ctrl/tFpgaWrite[40]} {u_fifo_ctrl/tFpgaWrite[41]} {u_fifo_ctrl/tFpgaWrite[42]} {u_fifo_ctrl/tFpgaWrite[43]} {u_fifo_ctrl/tFpgaWrite[44]} {u_fifo_ctrl/tFpgaWrite[45]} {u_fifo_ctrl/tFpgaWrite[46]} {u_fifo_ctrl/tFpgaWrite[47]} {u_fifo_ctrl/tFpgaWrite[48]} {u_fifo_ctrl/tFpgaWrite[49]} {u_fifo_ctrl/tFpgaWrite[50]} {u_fifo_ctrl/tFpgaWrite[51]} {u_fifo_ctrl/tFpgaWrite[52]} {u_fifo_ctrl/tFpgaWrite[53]} {u_fifo_ctrl/tFpgaWrite[54]} {u_fifo_ctrl/tFpgaWrite[55]} {u_fifo_ctrl/tFpgaWrite[56]} {u_fifo_ctrl/tFpgaWrite[57]} {u_fifo_ctrl/tFpgaWrite[58]} {u_fifo_ctrl/tFpgaWrite[59]} {u_fifo_ctrl/tFpgaWrite[60]} {u_fifo_ctrl/tFpgaWrite[61]} {u_fifo_ctrl/tFpgaWrite[62]} {u_fifo_ctrl/tFpgaWrite[63]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+set_property port_width 64 [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_fifo_ctrl/tMaxPcLoop[0]} {u_fifo_ctrl/tMaxPcLoop[1]} {u_fifo_ctrl/tMaxPcLoop[2]} {u_fifo_ctrl/tMaxPcLoop[3]} {u_fifo_ctrl/tMaxPcLoop[4]} {u_fifo_ctrl/tMaxPcLoop[5]} {u_fifo_ctrl/tMaxPcLoop[6]} {u_fifo_ctrl/tMaxPcLoop[7]} {u_fifo_ctrl/tMaxPcLoop[8]} {u_fifo_ctrl/tMaxPcLoop[9]} {u_fifo_ctrl/tMaxPcLoop[10]} {u_fifo_ctrl/tMaxPcLoop[11]} {u_fifo_ctrl/tMaxPcLoop[12]} {u_fifo_ctrl/tMaxPcLoop[13]} {u_fifo_ctrl/tMaxPcLoop[14]} {u_fifo_ctrl/tMaxPcLoop[15]} {u_fifo_ctrl/tMaxPcLoop[16]} {u_fifo_ctrl/tMaxPcLoop[17]} {u_fifo_ctrl/tMaxPcLoop[18]} {u_fifo_ctrl/tMaxPcLoop[19]} {u_fifo_ctrl/tMaxPcLoop[20]} {u_fifo_ctrl/tMaxPcLoop[21]} {u_fifo_ctrl/tMaxPcLoop[22]} {u_fifo_ctrl/tMaxPcLoop[23]} {u_fifo_ctrl/tMaxPcLoop[24]} {u_fifo_ctrl/tMaxPcLoop[25]} {u_fifo_ctrl/tMaxPcLoop[26]} {u_fifo_ctrl/tMaxPcLoop[27]} {u_fifo_ctrl/tMaxPcLoop[28]} {u_fifo_ctrl/tMaxPcLoop[29]} {u_fifo_ctrl/tMaxPcLoop[30]} {u_fifo_ctrl/tMaxPcLoop[31]} {u_fifo_ctrl/tMaxPcLoop[32]} {u_fifo_ctrl/tMaxPcLoop[33]} {u_fifo_ctrl/tMaxPcLoop[34]} {u_fifo_ctrl/tMaxPcLoop[35]} {u_fifo_ctrl/tMaxPcLoop[36]} {u_fifo_ctrl/tMaxPcLoop[37]} {u_fifo_ctrl/tMaxPcLoop[38]} {u_fifo_ctrl/tMaxPcLoop[39]} {u_fifo_ctrl/tMaxPcLoop[40]} {u_fifo_ctrl/tMaxPcLoop[41]} {u_fifo_ctrl/tMaxPcLoop[42]} {u_fifo_ctrl/tMaxPcLoop[43]} {u_fifo_ctrl/tMaxPcLoop[44]} {u_fifo_ctrl/tMaxPcLoop[45]} {u_fifo_ctrl/tMaxPcLoop[46]} {u_fifo_ctrl/tMaxPcLoop[47]} {u_fifo_ctrl/tMaxPcLoop[48]} {u_fifo_ctrl/tMaxPcLoop[49]} {u_fifo_ctrl/tMaxPcLoop[50]} {u_fifo_ctrl/tMaxPcLoop[51]} {u_fifo_ctrl/tMaxPcLoop[52]} {u_fifo_ctrl/tMaxPcLoop[53]} {u_fifo_ctrl/tMaxPcLoop[54]} {u_fifo_ctrl/tMaxPcLoop[55]} {u_fifo_ctrl/tMaxPcLoop[56]} {u_fifo_ctrl/tMaxPcLoop[57]} {u_fifo_ctrl/tMaxPcLoop[58]} {u_fifo_ctrl/tMaxPcLoop[59]} {u_fifo_ctrl/tMaxPcLoop[60]} {u_fifo_ctrl/tMaxPcLoop[61]} {u_fifo_ctrl/tMaxPcLoop[62]} {u_fifo_ctrl/tMaxPcLoop[63]}]]
+create_debug_port u_ila_0 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+set_property port_width 64 [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_fifo_ctrl/tPcLoop[0]} {u_fifo_ctrl/tPcLoop[1]} {u_fifo_ctrl/tPcLoop[2]} {u_fifo_ctrl/tPcLoop[3]} {u_fifo_ctrl/tPcLoop[4]} {u_fifo_ctrl/tPcLoop[5]} {u_fifo_ctrl/tPcLoop[6]} {u_fifo_ctrl/tPcLoop[7]} {u_fifo_ctrl/tPcLoop[8]} {u_fifo_ctrl/tPcLoop[9]} {u_fifo_ctrl/tPcLoop[10]} {u_fifo_ctrl/tPcLoop[11]} {u_fifo_ctrl/tPcLoop[12]} {u_fifo_ctrl/tPcLoop[13]} {u_fifo_ctrl/tPcLoop[14]} {u_fifo_ctrl/tPcLoop[15]} {u_fifo_ctrl/tPcLoop[16]} {u_fifo_ctrl/tPcLoop[17]} {u_fifo_ctrl/tPcLoop[18]} {u_fifo_ctrl/tPcLoop[19]} {u_fifo_ctrl/tPcLoop[20]} {u_fifo_ctrl/tPcLoop[21]} {u_fifo_ctrl/tPcLoop[22]} {u_fifo_ctrl/tPcLoop[23]} {u_fifo_ctrl/tPcLoop[24]} {u_fifo_ctrl/tPcLoop[25]} {u_fifo_ctrl/tPcLoop[26]} {u_fifo_ctrl/tPcLoop[27]} {u_fifo_ctrl/tPcLoop[28]} {u_fifo_ctrl/tPcLoop[29]} {u_fifo_ctrl/tPcLoop[30]} {u_fifo_ctrl/tPcLoop[31]} {u_fifo_ctrl/tPcLoop[32]} {u_fifo_ctrl/tPcLoop[33]} {u_fifo_ctrl/tPcLoop[34]} {u_fifo_ctrl/tPcLoop[35]} {u_fifo_ctrl/tPcLoop[36]} {u_fifo_ctrl/tPcLoop[37]} {u_fifo_ctrl/tPcLoop[38]} {u_fifo_ctrl/tPcLoop[39]} {u_fifo_ctrl/tPcLoop[40]} {u_fifo_ctrl/tPcLoop[41]} {u_fifo_ctrl/tPcLoop[42]} {u_fifo_ctrl/tPcLoop[43]} {u_fifo_ctrl/tPcLoop[44]} {u_fifo_ctrl/tPcLoop[45]} {u_fifo_ctrl/tPcLoop[46]} {u_fifo_ctrl/tPcLoop[47]} {u_fifo_ctrl/tPcLoop[48]} {u_fifo_ctrl/tPcLoop[49]} {u_fifo_ctrl/tPcLoop[50]} {u_fifo_ctrl/tPcLoop[51]} {u_fifo_ctrl/tPcLoop[52]} {u_fifo_ctrl/tPcLoop[53]} {u_fifo_ctrl/tPcLoop[54]} {u_fifo_ctrl/tPcLoop[55]} {u_fifo_ctrl/tPcLoop[56]} {u_fifo_ctrl/tPcLoop[57]} {u_fifo_ctrl/tPcLoop[58]} {u_fifo_ctrl/tPcLoop[59]} {u_fifo_ctrl/tPcLoop[60]} {u_fifo_ctrl/tPcLoop[61]} {u_fifo_ctrl/tPcLoop[62]} {u_fifo_ctrl/tPcLoop[63]}]]
+set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
+set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
+set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
+connect_debug_port dbg_hub/clk [get_nets eth_txc_OBUF]
