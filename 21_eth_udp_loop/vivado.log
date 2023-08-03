@@ -2,21 +2,103 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Aug  1 15:22:45 2023
-# Process ID: 5820
-# Current directory: C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18544 C:\Users\Administrator\Desktop\udpLoop\21_eth_udp_loop\eth_udp_loop.xpr
-# Log file: C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/vivado.log
-# Journal file: C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop\vivado.jou
+# Start of session at: Thu Aug  3 15:44:07 2023
+# Process ID: 6520
+# Current directory: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop
+# Command line: vivado.exe D:\Project\Qt5Proj\win10\udpLoop\Qt_Udp_Loop\21_eth_udp_loop\eth_udp_loop.xpr
+# Log file: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/vivado.log
+# Journal file: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.xpr
+open_project D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
 update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+[Thu Aug  3 15:44:25 2023] Launched synth_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+[Thu Aug  3 15:46:20 2023] Launched synth_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 20
+[Thu Aug  3 15:47:00 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'd:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.dcp' for cell 'u_clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.dcp' for cell 'u_fifo_ctrl/u_fpga2pc_sync_fifo_2048x32b'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1497.980 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 206 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_fpga2pc_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_fpga2pc_sync_fifo_2048x32b/U0'
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_pc2fpga_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_pc2fpga_sync_fifo_2048x32b/U0'
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk_wiz/inst'
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk_wiz/inst'
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk_wiz/inst'
+Parsing XDC File [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:1]
+WARNING: [Vivado 12-507] No nets matched 'u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:33]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:33]
+Finished Parsing XDC File [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2187.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 2240.176 ; gain = 1038.328
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list u_gmii_to_rgmii/u_rgmii_rx/gmii_rx_clk ]]
+set_property port_width 64 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_fifo_ctrl/tPcLoop[0]} {u_fifo_ctrl/tPcLoop[1]} {u_fifo_ctrl/tPcLoop[2]} {u_fifo_ctrl/tPcLoop[3]} {u_fifo_ctrl/tPcLoop[4]} {u_fifo_ctrl/tPcLoop[5]} {u_fifo_ctrl/tPcLoop[6]} {u_fifo_ctrl/tPcLoop[7]} {u_fifo_ctrl/tPcLoop[8]} {u_fifo_ctrl/tPcLoop[9]} {u_fifo_ctrl/tPcLoop[10]} {u_fifo_ctrl/tPcLoop[11]} {u_fifo_ctrl/tPcLoop[12]} {u_fifo_ctrl/tPcLoop[13]} {u_fifo_ctrl/tPcLoop[14]} {u_fifo_ctrl/tPcLoop[15]} {u_fifo_ctrl/tPcLoop[16]} {u_fifo_ctrl/tPcLoop[17]} {u_fifo_ctrl/tPcLoop[18]} {u_fifo_ctrl/tPcLoop[19]} {u_fifo_ctrl/tPcLoop[20]} {u_fifo_ctrl/tPcLoop[21]} {u_fifo_ctrl/tPcLoop[22]} {u_fifo_ctrl/tPcLoop[23]} {u_fifo_ctrl/tPcLoop[24]} {u_fifo_ctrl/tPcLoop[25]} {u_fifo_ctrl/tPcLoop[26]} {u_fifo_ctrl/tPcLoop[27]} {u_fifo_ctrl/tPcLoop[28]} {u_fifo_ctrl/tPcLoop[29]} {u_fifo_ctrl/tPcLoop[30]} {u_fifo_ctrl/tPcLoop[31]} {u_fifo_ctrl/tPcLoop[32]} {u_fifo_ctrl/tPcLoop[33]} {u_fifo_ctrl/tPcLoop[34]} {u_fifo_ctrl/tPcLoop[35]} {u_fifo_ctrl/tPcLoop[36]} {u_fifo_ctrl/tPcLoop[37]} {u_fifo_ctrl/tPcLoop[38]} {u_fifo_ctrl/tPcLoop[39]} {u_fifo_ctrl/tPcLoop[40]} {u_fifo_ctrl/tPcLoop[41]} {u_fifo_ctrl/tPcLoop[42]} {u_fifo_ctrl/tPcLoop[43]} {u_fifo_ctrl/tPcLoop[44]} {u_fifo_ctrl/tPcLoop[45]} {u_fifo_ctrl/tPcLoop[46]} {u_fifo_ctrl/tPcLoop[47]} {u_fifo_ctrl/tPcLoop[48]} {u_fifo_ctrl/tPcLoop[49]} {u_fifo_ctrl/tPcLoop[50]} {u_fifo_ctrl/tPcLoop[51]} {u_fifo_ctrl/tPcLoop[52]} {u_fifo_ctrl/tPcLoop[53]} {u_fifo_ctrl/tPcLoop[54]} {u_fifo_ctrl/tPcLoop[55]} {u_fifo_ctrl/tPcLoop[56]} {u_fifo_ctrl/tPcLoop[57]} {u_fifo_ctrl/tPcLoop[58]} {u_fifo_ctrl/tPcLoop[59]} {u_fifo_ctrl/tPcLoop[60]} {u_fifo_ctrl/tPcLoop[61]} {u_fifo_ctrl/tPcLoop[62]} {u_fifo_ctrl/tPcLoop[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_fifo_ctrl/tMaxPcLoop[0]} {u_fifo_ctrl/tMaxPcLoop[1]} {u_fifo_ctrl/tMaxPcLoop[2]} {u_fifo_ctrl/tMaxPcLoop[3]} {u_fifo_ctrl/tMaxPcLoop[4]} {u_fifo_ctrl/tMaxPcLoop[5]} {u_fifo_ctrl/tMaxPcLoop[6]} {u_fifo_ctrl/tMaxPcLoop[7]} {u_fifo_ctrl/tMaxPcLoop[8]} {u_fifo_ctrl/tMaxPcLoop[9]} {u_fifo_ctrl/tMaxPcLoop[10]} {u_fifo_ctrl/tMaxPcLoop[11]} {u_fifo_ctrl/tMaxPcLoop[12]} {u_fifo_ctrl/tMaxPcLoop[13]} {u_fifo_ctrl/tMaxPcLoop[14]} {u_fifo_ctrl/tMaxPcLoop[15]} {u_fifo_ctrl/tMaxPcLoop[16]} {u_fifo_ctrl/tMaxPcLoop[17]} {u_fifo_ctrl/tMaxPcLoop[18]} {u_fifo_ctrl/tMaxPcLoop[19]} {u_fifo_ctrl/tMaxPcLoop[20]} {u_fifo_ctrl/tMaxPcLoop[21]} {u_fifo_ctrl/tMaxPcLoop[22]} {u_fifo_ctrl/tMaxPcLoop[23]} {u_fifo_ctrl/tMaxPcLoop[24]} {u_fifo_ctrl/tMaxPcLoop[25]} {u_fifo_ctrl/tMaxPcLoop[26]} {u_fifo_ctrl/tMaxPcLoop[27]} {u_fifo_ctrl/tMaxPcLoop[28]} {u_fifo_ctrl/tMaxPcLoop[29]} {u_fifo_ctrl/tMaxPcLoop[30]} {u_fifo_ctrl/tMaxPcLoop[31]} {u_fifo_ctrl/tMaxPcLoop[32]} {u_fifo_ctrl/tMaxPcLoop[33]} {u_fifo_ctrl/tMaxPcLoop[34]} {u_fifo_ctrl/tMaxPcLoop[35]} {u_fifo_ctrl/tMaxPcLoop[36]} {u_fifo_ctrl/tMaxPcLoop[37]} {u_fifo_ctrl/tMaxPcLoop[38]} {u_fifo_ctrl/tMaxPcLoop[39]} {u_fifo_ctrl/tMaxPcLoop[40]} {u_fifo_ctrl/tMaxPcLoop[41]} {u_fifo_ctrl/tMaxPcLoop[42]} {u_fifo_ctrl/tMaxPcLoop[43]} {u_fifo_ctrl/tMaxPcLoop[44]} {u_fifo_ctrl/tMaxPcLoop[45]} {u_fifo_ctrl/tMaxPcLoop[46]} {u_fifo_ctrl/tMaxPcLoop[47]} {u_fifo_ctrl/tMaxPcLoop[48]} {u_fifo_ctrl/tMaxPcLoop[49]} {u_fifo_ctrl/tMaxPcLoop[50]} {u_fifo_ctrl/tMaxPcLoop[51]} {u_fifo_ctrl/tMaxPcLoop[52]} {u_fifo_ctrl/tMaxPcLoop[53]} {u_fifo_ctrl/tMaxPcLoop[54]} {u_fifo_ctrl/tMaxPcLoop[55]} {u_fifo_ctrl/tMaxPcLoop[56]} {u_fifo_ctrl/tMaxPcLoop[57]} {u_fifo_ctrl/tMaxPcLoop[58]} {u_fifo_ctrl/tMaxPcLoop[59]} {u_fifo_ctrl/tMaxPcLoop[60]} {u_fifo_ctrl/tMaxPcLoop[61]} {u_fifo_ctrl/tMaxPcLoop[62]} {u_fifo_ctrl/tMaxPcLoop[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_fifo_ctrl/tFpgaWrite[0]} {u_fifo_ctrl/tFpgaWrite[1]} {u_fifo_ctrl/tFpgaWrite[2]} {u_fifo_ctrl/tFpgaWrite[3]} {u_fifo_ctrl/tFpgaWrite[4]} {u_fifo_ctrl/tFpgaWrite[5]} {u_fifo_ctrl/tFpgaWrite[6]} {u_fifo_ctrl/tFpgaWrite[7]} {u_fifo_ctrl/tFpgaWrite[8]} {u_fifo_ctrl/tFpgaWrite[9]} {u_fifo_ctrl/tFpgaWrite[10]} {u_fifo_ctrl/tFpgaWrite[11]} {u_fifo_ctrl/tFpgaWrite[12]} {u_fifo_ctrl/tFpgaWrite[13]} {u_fifo_ctrl/tFpgaWrite[14]} {u_fifo_ctrl/tFpgaWrite[15]} {u_fifo_ctrl/tFpgaWrite[16]} {u_fifo_ctrl/tFpgaWrite[17]} {u_fifo_ctrl/tFpgaWrite[18]} {u_fifo_ctrl/tFpgaWrite[19]} {u_fifo_ctrl/tFpgaWrite[20]} {u_fifo_ctrl/tFpgaWrite[21]} {u_fifo_ctrl/tFpgaWrite[22]} {u_fifo_ctrl/tFpgaWrite[23]} {u_fifo_ctrl/tFpgaWrite[24]} {u_fifo_ctrl/tFpgaWrite[25]} {u_fifo_ctrl/tFpgaWrite[26]} {u_fifo_ctrl/tFpgaWrite[27]} {u_fifo_ctrl/tFpgaWrite[28]} {u_fifo_ctrl/tFpgaWrite[29]} {u_fifo_ctrl/tFpgaWrite[30]} {u_fifo_ctrl/tFpgaWrite[31]} {u_fifo_ctrl/tFpgaWrite[32]} {u_fifo_ctrl/tFpgaWrite[33]} {u_fifo_ctrl/tFpgaWrite[34]} {u_fifo_ctrl/tFpgaWrite[35]} {u_fifo_ctrl/tFpgaWrite[36]} {u_fifo_ctrl/tFpgaWrite[37]} {u_fifo_ctrl/tFpgaWrite[38]} {u_fifo_ctrl/tFpgaWrite[39]} {u_fifo_ctrl/tFpgaWrite[40]} {u_fifo_ctrl/tFpgaWrite[41]} {u_fifo_ctrl/tFpgaWrite[42]} {u_fifo_ctrl/tFpgaWrite[43]} {u_fifo_ctrl/tFpgaWrite[44]} {u_fifo_ctrl/tFpgaWrite[45]} {u_fifo_ctrl/tFpgaWrite[46]} {u_fifo_ctrl/tFpgaWrite[47]} {u_fifo_ctrl/tFpgaWrite[48]} {u_fifo_ctrl/tFpgaWrite[49]} {u_fifo_ctrl/tFpgaWrite[50]} {u_fifo_ctrl/tFpgaWrite[51]} {u_fifo_ctrl/tFpgaWrite[52]} {u_fifo_ctrl/tFpgaWrite[53]} {u_fifo_ctrl/tFpgaWrite[54]} {u_fifo_ctrl/tFpgaWrite[55]} {u_fifo_ctrl/tFpgaWrite[56]} {u_fifo_ctrl/tFpgaWrite[57]} {u_fifo_ctrl/tFpgaWrite[58]} {u_fifo_ctrl/tFpgaWrite[59]} {u_fifo_ctrl/tFpgaWrite[60]} {u_fifo_ctrl/tFpgaWrite[61]} {u_fifo_ctrl/tFpgaWrite[62]} {u_fifo_ctrl/tFpgaWrite[63]} ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 20
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2260.543 ; gain = 0.000
+[Thu Aug  3 15:51:11 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Aug  3 15:52:30 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -40,282 +122,663 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1172.410 ; gain = 15.309
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 2263.430 ; gain = 0.000
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
-open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2688.609 ; gain = 1516.199
-set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
-set_property PROBES.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
 current_hw_device [get_hw_devices xc7z020_1]
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
 INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
 display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:23:22
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:23:22
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:23:33
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:23:33
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:23:35
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:23:35
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:23:37
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:23:37
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:23:45
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:23:45
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:23:47
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:23:47
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:23:48
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:23:48
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:23:50
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:23:50
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:23:53
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:23:53
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-set_property PROBES.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
 INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:30
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 15:53:58
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:30
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 15:53:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:35
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 15:54:19
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:35
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 15:54:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:36
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 15:54:21
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:36
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 15:54:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:38
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 15:54:23
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:38
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 15:54:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:40
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 15:54:37
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:40
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 15:54:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:41
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 15:54:43
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:41
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 15:54:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:43
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 15:54:53
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:43
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 15:54:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:45
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 15:54:57
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:45
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 15:54:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:48
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 15:56:22
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:48
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:50
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:50
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:54
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:54
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:24:55
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:24:55
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:25:08
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:25:08
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 15:56:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
 reset_run synth_1
 WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/synth_1
+1. Failed to delete one or more files in run directory D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1
+
+launch_runs synth_1 -jobs 20
+[Thu Aug  3 16:06:31 2023] Launched synth_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-2
+INFO: [Project 1-454] Reading design checkpoint 'd:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.dcp' for cell 'u_clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.dcp' for cell 'u_fifo_ctrl/u_fpga2pc_sync_fifo_2048x32b'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 3717.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 211 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_fpga2pc_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_fpga2pc_sync_fifo_2048x32b/U0'
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_pc2fpga_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_pc2fpga_sync_fifo_2048x32b/U0'
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk_wiz/inst'
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk_wiz/inst'
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk_wiz/inst'
+Parsing XDC File [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:1]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:23]
+WARNING: [Vivado 12-507] No nets matched 'u_gmii_to_rgmii/u_rgmii_rx/gmii_rx_clk'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:35]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:35]
+Finished Parsing XDC File [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3882.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc ]]
+set_property port_width 64 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_fifo_ctrl/tMaxPcLoop[0]} {u_fifo_ctrl/tMaxPcLoop[1]} {u_fifo_ctrl/tMaxPcLoop[2]} {u_fifo_ctrl/tMaxPcLoop[3]} {u_fifo_ctrl/tMaxPcLoop[4]} {u_fifo_ctrl/tMaxPcLoop[5]} {u_fifo_ctrl/tMaxPcLoop[6]} {u_fifo_ctrl/tMaxPcLoop[7]} {u_fifo_ctrl/tMaxPcLoop[8]} {u_fifo_ctrl/tMaxPcLoop[9]} {u_fifo_ctrl/tMaxPcLoop[10]} {u_fifo_ctrl/tMaxPcLoop[11]} {u_fifo_ctrl/tMaxPcLoop[12]} {u_fifo_ctrl/tMaxPcLoop[13]} {u_fifo_ctrl/tMaxPcLoop[14]} {u_fifo_ctrl/tMaxPcLoop[15]} {u_fifo_ctrl/tMaxPcLoop[16]} {u_fifo_ctrl/tMaxPcLoop[17]} {u_fifo_ctrl/tMaxPcLoop[18]} {u_fifo_ctrl/tMaxPcLoop[19]} {u_fifo_ctrl/tMaxPcLoop[20]} {u_fifo_ctrl/tMaxPcLoop[21]} {u_fifo_ctrl/tMaxPcLoop[22]} {u_fifo_ctrl/tMaxPcLoop[23]} {u_fifo_ctrl/tMaxPcLoop[24]} {u_fifo_ctrl/tMaxPcLoop[25]} {u_fifo_ctrl/tMaxPcLoop[26]} {u_fifo_ctrl/tMaxPcLoop[27]} {u_fifo_ctrl/tMaxPcLoop[28]} {u_fifo_ctrl/tMaxPcLoop[29]} {u_fifo_ctrl/tMaxPcLoop[30]} {u_fifo_ctrl/tMaxPcLoop[31]} {u_fifo_ctrl/tMaxPcLoop[32]} {u_fifo_ctrl/tMaxPcLoop[33]} {u_fifo_ctrl/tMaxPcLoop[34]} {u_fifo_ctrl/tMaxPcLoop[35]} {u_fifo_ctrl/tMaxPcLoop[36]} {u_fifo_ctrl/tMaxPcLoop[37]} {u_fifo_ctrl/tMaxPcLoop[38]} {u_fifo_ctrl/tMaxPcLoop[39]} {u_fifo_ctrl/tMaxPcLoop[40]} {u_fifo_ctrl/tMaxPcLoop[41]} {u_fifo_ctrl/tMaxPcLoop[42]} {u_fifo_ctrl/tMaxPcLoop[43]} {u_fifo_ctrl/tMaxPcLoop[44]} {u_fifo_ctrl/tMaxPcLoop[45]} {u_fifo_ctrl/tMaxPcLoop[46]} {u_fifo_ctrl/tMaxPcLoop[47]} {u_fifo_ctrl/tMaxPcLoop[48]} {u_fifo_ctrl/tMaxPcLoop[49]} {u_fifo_ctrl/tMaxPcLoop[50]} {u_fifo_ctrl/tMaxPcLoop[51]} {u_fifo_ctrl/tMaxPcLoop[52]} {u_fifo_ctrl/tMaxPcLoop[53]} {u_fifo_ctrl/tMaxPcLoop[54]} {u_fifo_ctrl/tMaxPcLoop[55]} {u_fifo_ctrl/tMaxPcLoop[56]} {u_fifo_ctrl/tMaxPcLoop[57]} {u_fifo_ctrl/tMaxPcLoop[58]} {u_fifo_ctrl/tMaxPcLoop[59]} {u_fifo_ctrl/tMaxPcLoop[60]} {u_fifo_ctrl/tMaxPcLoop[61]} {u_fifo_ctrl/tMaxPcLoop[62]} {u_fifo_ctrl/tMaxPcLoop[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_fifo_ctrl/tPcLoop[0]} {u_fifo_ctrl/tPcLoop[1]} {u_fifo_ctrl/tPcLoop[2]} {u_fifo_ctrl/tPcLoop[3]} {u_fifo_ctrl/tPcLoop[4]} {u_fifo_ctrl/tPcLoop[5]} {u_fifo_ctrl/tPcLoop[6]} {u_fifo_ctrl/tPcLoop[7]} {u_fifo_ctrl/tPcLoop[8]} {u_fifo_ctrl/tPcLoop[9]} {u_fifo_ctrl/tPcLoop[10]} {u_fifo_ctrl/tPcLoop[11]} {u_fifo_ctrl/tPcLoop[12]} {u_fifo_ctrl/tPcLoop[13]} {u_fifo_ctrl/tPcLoop[14]} {u_fifo_ctrl/tPcLoop[15]} {u_fifo_ctrl/tPcLoop[16]} {u_fifo_ctrl/tPcLoop[17]} {u_fifo_ctrl/tPcLoop[18]} {u_fifo_ctrl/tPcLoop[19]} {u_fifo_ctrl/tPcLoop[20]} {u_fifo_ctrl/tPcLoop[21]} {u_fifo_ctrl/tPcLoop[22]} {u_fifo_ctrl/tPcLoop[23]} {u_fifo_ctrl/tPcLoop[24]} {u_fifo_ctrl/tPcLoop[25]} {u_fifo_ctrl/tPcLoop[26]} {u_fifo_ctrl/tPcLoop[27]} {u_fifo_ctrl/tPcLoop[28]} {u_fifo_ctrl/tPcLoop[29]} {u_fifo_ctrl/tPcLoop[30]} {u_fifo_ctrl/tPcLoop[31]} {u_fifo_ctrl/tPcLoop[32]} {u_fifo_ctrl/tPcLoop[33]} {u_fifo_ctrl/tPcLoop[34]} {u_fifo_ctrl/tPcLoop[35]} {u_fifo_ctrl/tPcLoop[36]} {u_fifo_ctrl/tPcLoop[37]} {u_fifo_ctrl/tPcLoop[38]} {u_fifo_ctrl/tPcLoop[39]} {u_fifo_ctrl/tPcLoop[40]} {u_fifo_ctrl/tPcLoop[41]} {u_fifo_ctrl/tPcLoop[42]} {u_fifo_ctrl/tPcLoop[43]} {u_fifo_ctrl/tPcLoop[44]} {u_fifo_ctrl/tPcLoop[45]} {u_fifo_ctrl/tPcLoop[46]} {u_fifo_ctrl/tPcLoop[47]} {u_fifo_ctrl/tPcLoop[48]} {u_fifo_ctrl/tPcLoop[49]} {u_fifo_ctrl/tPcLoop[50]} {u_fifo_ctrl/tPcLoop[51]} {u_fifo_ctrl/tPcLoop[52]} {u_fifo_ctrl/tPcLoop[53]} {u_fifo_ctrl/tPcLoop[54]} {u_fifo_ctrl/tPcLoop[55]} {u_fifo_ctrl/tPcLoop[56]} {u_fifo_ctrl/tPcLoop[57]} {u_fifo_ctrl/tPcLoop[58]} {u_fifo_ctrl/tPcLoop[59]} {u_fifo_ctrl/tPcLoop[60]} {u_fifo_ctrl/tPcLoop[61]} {u_fifo_ctrl/tPcLoop[62]} {u_fifo_ctrl/tPcLoop[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_fifo_ctrl/rec_fifo_din[0]} {u_fifo_ctrl/rec_fifo_din[1]} {u_fifo_ctrl/rec_fifo_din[2]} {u_fifo_ctrl/rec_fifo_din[3]} {u_fifo_ctrl/rec_fifo_din[4]} {u_fifo_ctrl/rec_fifo_din[5]} {u_fifo_ctrl/rec_fifo_din[6]} {u_fifo_ctrl/rec_fifo_din[7]} {u_fifo_ctrl/rec_fifo_din[8]} {u_fifo_ctrl/rec_fifo_din[9]} {u_fifo_ctrl/rec_fifo_din[10]} {u_fifo_ctrl/rec_fifo_din[11]} {u_fifo_ctrl/rec_fifo_din[12]} {u_fifo_ctrl/rec_fifo_din[13]} {u_fifo_ctrl/rec_fifo_din[14]} {u_fifo_ctrl/rec_fifo_din[15]} {u_fifo_ctrl/rec_fifo_din[16]} {u_fifo_ctrl/rec_fifo_din[17]} {u_fifo_ctrl/rec_fifo_din[18]} {u_fifo_ctrl/rec_fifo_din[19]} {u_fifo_ctrl/rec_fifo_din[20]} {u_fifo_ctrl/rec_fifo_din[21]} {u_fifo_ctrl/rec_fifo_din[22]} {u_fifo_ctrl/rec_fifo_din[23]} {u_fifo_ctrl/rec_fifo_din[24]} {u_fifo_ctrl/rec_fifo_din[25]} {u_fifo_ctrl/rec_fifo_din[26]} {u_fifo_ctrl/rec_fifo_din[27]} {u_fifo_ctrl/rec_fifo_din[28]} {u_fifo_ctrl/rec_fifo_din[29]} {u_fifo_ctrl/rec_fifo_din[30]} {u_fifo_ctrl/rec_fifo_din[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_fifo_ctrl/tFpgaWrite[0]} {u_fifo_ctrl/tFpgaWrite[1]} {u_fifo_ctrl/tFpgaWrite[2]} {u_fifo_ctrl/tFpgaWrite[3]} {u_fifo_ctrl/tFpgaWrite[4]} {u_fifo_ctrl/tFpgaWrite[5]} {u_fifo_ctrl/tFpgaWrite[6]} {u_fifo_ctrl/tFpgaWrite[7]} {u_fifo_ctrl/tFpgaWrite[8]} {u_fifo_ctrl/tFpgaWrite[9]} {u_fifo_ctrl/tFpgaWrite[10]} {u_fifo_ctrl/tFpgaWrite[11]} {u_fifo_ctrl/tFpgaWrite[12]} {u_fifo_ctrl/tFpgaWrite[13]} {u_fifo_ctrl/tFpgaWrite[14]} {u_fifo_ctrl/tFpgaWrite[15]} {u_fifo_ctrl/tFpgaWrite[16]} {u_fifo_ctrl/tFpgaWrite[17]} {u_fifo_ctrl/tFpgaWrite[18]} {u_fifo_ctrl/tFpgaWrite[19]} {u_fifo_ctrl/tFpgaWrite[20]} {u_fifo_ctrl/tFpgaWrite[21]} {u_fifo_ctrl/tFpgaWrite[22]} {u_fifo_ctrl/tFpgaWrite[23]} {u_fifo_ctrl/tFpgaWrite[24]} {u_fifo_ctrl/tFpgaWrite[25]} {u_fifo_ctrl/tFpgaWrite[26]} {u_fifo_ctrl/tFpgaWrite[27]} {u_fifo_ctrl/tFpgaWrite[28]} {u_fifo_ctrl/tFpgaWrite[29]} {u_fifo_ctrl/tFpgaWrite[30]} {u_fifo_ctrl/tFpgaWrite[31]} {u_fifo_ctrl/tFpgaWrite[32]} {u_fifo_ctrl/tFpgaWrite[33]} {u_fifo_ctrl/tFpgaWrite[34]} {u_fifo_ctrl/tFpgaWrite[35]} {u_fifo_ctrl/tFpgaWrite[36]} {u_fifo_ctrl/tFpgaWrite[37]} {u_fifo_ctrl/tFpgaWrite[38]} {u_fifo_ctrl/tFpgaWrite[39]} {u_fifo_ctrl/tFpgaWrite[40]} {u_fifo_ctrl/tFpgaWrite[41]} {u_fifo_ctrl/tFpgaWrite[42]} {u_fifo_ctrl/tFpgaWrite[43]} {u_fifo_ctrl/tFpgaWrite[44]} {u_fifo_ctrl/tFpgaWrite[45]} {u_fifo_ctrl/tFpgaWrite[46]} {u_fifo_ctrl/tFpgaWrite[47]} {u_fifo_ctrl/tFpgaWrite[48]} {u_fifo_ctrl/tFpgaWrite[49]} {u_fifo_ctrl/tFpgaWrite[50]} {u_fifo_ctrl/tFpgaWrite[51]} {u_fifo_ctrl/tFpgaWrite[52]} {u_fifo_ctrl/tFpgaWrite[53]} {u_fifo_ctrl/tFpgaWrite[54]} {u_fifo_ctrl/tFpgaWrite[55]} {u_fifo_ctrl/tFpgaWrite[56]} {u_fifo_ctrl/tFpgaWrite[57]} {u_fifo_ctrl/tFpgaWrite[58]} {u_fifo_ctrl/tFpgaWrite[59]} {u_fifo_ctrl/tFpgaWrite[60]} {u_fifo_ctrl/tFpgaWrite[61]} {u_fifo_ctrl/tFpgaWrite[62]} {u_fifo_ctrl/tFpgaWrite[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {u_fifo_ctrl/state[0]} {u_fifo_ctrl/state[1]} {u_fifo_ctrl/state[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {u_fifo_ctrl/num[0]} {u_fifo_ctrl/num[1]} {u_fifo_ctrl/num[2]} {u_fifo_ctrl/num[3]} {u_fifo_ctrl/num[4]} {u_fifo_ctrl/num[5]} {u_fifo_ctrl/num[6]} {u_fifo_ctrl/num[7]} {u_fifo_ctrl/num[8]} {u_fifo_ctrl/num[9]} {u_fifo_ctrl/num[10]} {u_fifo_ctrl/num[11]} {u_fifo_ctrl/num[12]} {u_fifo_ctrl/num[13]} {u_fifo_ctrl/num[14]} {u_fifo_ctrl/num[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {u_fifo_ctrl/rec_byte_num[0]} {u_fifo_ctrl/rec_byte_num[1]} {u_fifo_ctrl/rec_byte_num[2]} {u_fifo_ctrl/rec_byte_num[3]} {u_fifo_ctrl/rec_byte_num[4]} {u_fifo_ctrl/rec_byte_num[5]} {u_fifo_ctrl/rec_byte_num[6]} {u_fifo_ctrl/rec_byte_num[7]} {u_fifo_ctrl/rec_byte_num[8]} {u_fifo_ctrl/rec_byte_num[9]} {u_fifo_ctrl/rec_byte_num[10]} {u_fifo_ctrl/rec_byte_num[11]} {u_fifo_ctrl/rec_byte_num[12]} {u_fifo_ctrl/rec_byte_num[13]} {u_fifo_ctrl/rec_byte_num[14]} {u_fifo_ctrl/rec_byte_num[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {u_fifo_ctrl/fpga2pc_fifo_din[0]} {u_fifo_ctrl/fpga2pc_fifo_din[1]} {u_fifo_ctrl/fpga2pc_fifo_din[2]} {u_fifo_ctrl/fpga2pc_fifo_din[3]} {u_fifo_ctrl/fpga2pc_fifo_din[4]} {u_fifo_ctrl/fpga2pc_fifo_din[5]} {u_fifo_ctrl/fpga2pc_fifo_din[6]} {u_fifo_ctrl/fpga2pc_fifo_din[7]} {u_fifo_ctrl/fpga2pc_fifo_din[8]} {u_fifo_ctrl/fpga2pc_fifo_din[9]} {u_fifo_ctrl/fpga2pc_fifo_din[10]} {u_fifo_ctrl/fpga2pc_fifo_din[11]} {u_fifo_ctrl/fpga2pc_fifo_din[12]} {u_fifo_ctrl/fpga2pc_fifo_din[13]} {u_fifo_ctrl/fpga2pc_fifo_din[14]} {u_fifo_ctrl/fpga2pc_fifo_din[15]} {u_fifo_ctrl/fpga2pc_fifo_din[16]} {u_fifo_ctrl/fpga2pc_fifo_din[17]} {u_fifo_ctrl/fpga2pc_fifo_din[18]} {u_fifo_ctrl/fpga2pc_fifo_din[19]} {u_fifo_ctrl/fpga2pc_fifo_din[20]} {u_fifo_ctrl/fpga2pc_fifo_din[21]} {u_fifo_ctrl/fpga2pc_fifo_din[22]} {u_fifo_ctrl/fpga2pc_fifo_din[23]} {u_fifo_ctrl/fpga2pc_fifo_din[24]} {u_fifo_ctrl/fpga2pc_fifo_din[25]} {u_fifo_ctrl/fpga2pc_fifo_din[26]} {u_fifo_ctrl/fpga2pc_fifo_din[27]} {u_fifo_ctrl/fpga2pc_fifo_din[28]} {u_fifo_ctrl/fpga2pc_fifo_din[29]} {u_fifo_ctrl/fpga2pc_fifo_din[30]} {u_fifo_ctrl/fpga2pc_fifo_din[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {u_fifo_ctrl/pc2fpga_fifo_dout[0]} {u_fifo_ctrl/pc2fpga_fifo_dout[1]} {u_fifo_ctrl/pc2fpga_fifo_dout[2]} {u_fifo_ctrl/pc2fpga_fifo_dout[3]} {u_fifo_ctrl/pc2fpga_fifo_dout[4]} {u_fifo_ctrl/pc2fpga_fifo_dout[5]} {u_fifo_ctrl/pc2fpga_fifo_dout[6]} {u_fifo_ctrl/pc2fpga_fifo_dout[7]} {u_fifo_ctrl/pc2fpga_fifo_dout[8]} {u_fifo_ctrl/pc2fpga_fifo_dout[9]} {u_fifo_ctrl/pc2fpga_fifo_dout[10]} {u_fifo_ctrl/pc2fpga_fifo_dout[11]} {u_fifo_ctrl/pc2fpga_fifo_dout[12]} {u_fifo_ctrl/pc2fpga_fifo_dout[13]} {u_fifo_ctrl/pc2fpga_fifo_dout[14]} {u_fifo_ctrl/pc2fpga_fifo_dout[15]} {u_fifo_ctrl/pc2fpga_fifo_dout[16]} {u_fifo_ctrl/pc2fpga_fifo_dout[17]} {u_fifo_ctrl/pc2fpga_fifo_dout[18]} {u_fifo_ctrl/pc2fpga_fifo_dout[19]} {u_fifo_ctrl/pc2fpga_fifo_dout[20]} {u_fifo_ctrl/pc2fpga_fifo_dout[21]} {u_fifo_ctrl/pc2fpga_fifo_dout[22]} {u_fifo_ctrl/pc2fpga_fifo_dout[23]} {u_fifo_ctrl/pc2fpga_fifo_dout[24]} {u_fifo_ctrl/pc2fpga_fifo_dout[25]} {u_fifo_ctrl/pc2fpga_fifo_dout[26]} {u_fifo_ctrl/pc2fpga_fifo_dout[27]} {u_fifo_ctrl/pc2fpga_fifo_dout[28]} {u_fifo_ctrl/pc2fpga_fifo_dout[29]} {u_fifo_ctrl/pc2fpga_fifo_dout[30]} {u_fifo_ctrl/pc2fpga_fifo_dout[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {u_fifo_ctrl/tx_byte_num[0]} {u_fifo_ctrl/tx_byte_num[1]} {u_fifo_ctrl/tx_byte_num[2]} {u_fifo_ctrl/tx_byte_num[3]} {u_fifo_ctrl/tx_byte_num[4]} {u_fifo_ctrl/tx_byte_num[5]} {u_fifo_ctrl/tx_byte_num[6]} {u_fifo_ctrl/tx_byte_num[7]} {u_fifo_ctrl/tx_byte_num[8]} {u_fifo_ctrl/tx_byte_num[9]} {u_fifo_ctrl/tx_byte_num[10]} {u_fifo_ctrl/tx_byte_num[11]} {u_fifo_ctrl/tx_byte_num[12]} {u_fifo_ctrl/tx_byte_num[13]} {u_fifo_ctrl/tx_byte_num[14]} {u_fifo_ctrl/tx_byte_num[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 32 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {u_fifo_ctrl/tx_fifo_dout[0]} {u_fifo_ctrl/tx_fifo_dout[1]} {u_fifo_ctrl/tx_fifo_dout[2]} {u_fifo_ctrl/tx_fifo_dout[3]} {u_fifo_ctrl/tx_fifo_dout[4]} {u_fifo_ctrl/tx_fifo_dout[5]} {u_fifo_ctrl/tx_fifo_dout[6]} {u_fifo_ctrl/tx_fifo_dout[7]} {u_fifo_ctrl/tx_fifo_dout[8]} {u_fifo_ctrl/tx_fifo_dout[9]} {u_fifo_ctrl/tx_fifo_dout[10]} {u_fifo_ctrl/tx_fifo_dout[11]} {u_fifo_ctrl/tx_fifo_dout[12]} {u_fifo_ctrl/tx_fifo_dout[13]} {u_fifo_ctrl/tx_fifo_dout[14]} {u_fifo_ctrl/tx_fifo_dout[15]} {u_fifo_ctrl/tx_fifo_dout[16]} {u_fifo_ctrl/tx_fifo_dout[17]} {u_fifo_ctrl/tx_fifo_dout[18]} {u_fifo_ctrl/tx_fifo_dout[19]} {u_fifo_ctrl/tx_fifo_dout[20]} {u_fifo_ctrl/tx_fifo_dout[21]} {u_fifo_ctrl/tx_fifo_dout[22]} {u_fifo_ctrl/tx_fifo_dout[23]} {u_fifo_ctrl/tx_fifo_dout[24]} {u_fifo_ctrl/tx_fifo_dout[25]} {u_fifo_ctrl/tx_fifo_dout[26]} {u_fifo_ctrl/tx_fifo_dout[27]} {u_fifo_ctrl/tx_fifo_dout[28]} {u_fifo_ctrl/tx_fifo_dout[29]} {u_fifo_ctrl/tx_fifo_dout[30]} {u_fifo_ctrl/tx_fifo_dout[31]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list u_fifo_ctrl/fpga2pc_fifo_wren ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list u_fifo_ctrl/pc2fpga_fifo_rden ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list u_fifo_ctrl/rec_fifo_wren ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list u_fifo_ctrl/rec_pkt_done ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list u_fifo_ctrl/tx_fifo_rden ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list u_fifo_ctrl/tx_pkt_done ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list u_fifo_ctrl/tx_start_en ]]
+save_constraints
+launch_runs impl_1 -jobs 20
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 3916.000 ; gain = 4.332
+[Thu Aug  3 16:07:43 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Aug  3 16:10:19 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {u_fifo_ctrl/fpga2pc_fifo_din} {u_fifo_ctrl/fpga2pc_fifo_wren} {u_fifo_ctrl/num} {u_fifo_ctrl/pc2fpga_fifo_dout} {u_fifo_ctrl/pc2fpga_fifo_rden} {u_fifo_ctrl/rec_byte_num} {u_fifo_ctrl/rec_fifo_din} {u_fifo_ctrl/rec_fifo_wren} {u_fifo_ctrl/rec_pkt_done} {u_fifo_ctrl/state} {u_fifo_ctrl/tx_byte_num} {u_fifo_ctrl/tx_fifo_dout} {u_fifo_ctrl/tx_fifo_rden} {u_fifo_ctrl/tx_pkt_done} {u_fifo_ctrl/tx_start_en} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:12:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 16:12:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:13:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 16:13:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1
 
 launch_runs impl_1 -jobs 20
-[Tue Aug  1 15:29:58 2023] Launched synth_1...
-Run output will be captured here: C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/synth_1/runme.log
-[Tue Aug  1 15:29:58 2023] Launched impl_1...
-Run output will be captured here: C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Aug  3 16:16:42 2023] Launched synth_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1/runme.log
+[Thu Aug  3 16:16:42 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
 launch_runs impl_1 -to_step write_bitstream -jobs 20
-[Tue Aug  1 15:31:56 2023] Launched impl_1...
-Run output will be captured here: C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
-set_property PROBES.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+[Thu Aug  3 16:19:09 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+set_property TRIGGER_COMPARE_VALUE eq3'h1 [get_hw_probes u_fifo_ctrl/state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:22:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 16:22:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
 INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:32:56
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:27:45
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2023-Aug-03 16:27:52
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:27:52
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:32:56
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 16:27:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:32:57
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:28:26
 wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
 display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:32:57
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:32:59
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:32:59
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:00
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:00
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:02
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:02
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:04
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:04
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:08
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:08
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:09
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:09
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:11
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:11
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:13
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:13
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:14
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:14
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:16
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:16
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:33:33
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:33:33
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:34:35
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:34:35
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-01 15:34:38
-wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
-display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-01 15:34:38
-INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 16:28:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1
+
+launch_runs synth_1 -jobs 20
+[Thu Aug  3 16:31:45 2023] Launched synth_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Aug  3 16:34:52 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Aug  3 16:36:47 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
 INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:37:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 16:37:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:38:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 16:38:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:39:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 16:39:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1
+
+launch_runs impl_1 -jobs 20
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Aug  3 16:43:04 2023] Launched synth_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1/runme.log
+[Thu Aug  3 16:43:04 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Aug  3 16:45:16 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:51:09
+set_property TRIGGER_COMPARE_VALUE eq3'hX [get_hw_probes u_fifo_ctrl/state -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2023-Aug-03 16:51:20
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 16:51:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 16:51:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1
+
+launch_runs synth_1 -jobs 20
+[Thu Aug  3 17:00:06 2023] Launched synth_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/synth_1/runme.log
+refresh_design
+INFO: [Project 1-454] Reading design checkpoint 'd:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.dcp' for cell 'u_clk_wiz'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.dcp' for cell 'u_fifo_ctrl/u_fpga2pc_sync_fifo_2048x32b'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 4011.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 239 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_fpga2pc_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_fpga2pc_sync_fifo_2048x32b/U0'
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_pc2fpga_sync_fifo_2048x32b/U0'
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/sync_fifo_2048x32b/sync_fifo_2048x32b.xdc] for cell 'u_fifo_ctrl/u_pc2fpga_sync_fifo_2048x32b/U0'
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk_wiz/inst'
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk_wiz/inst'
+Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk_wiz/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
+Finished Parsing XDC File [d:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk_wiz/inst'
+Parsing XDC File [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:1]
+WARNING: [Vivado 12-507] No nets matched 'u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:23]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:23]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:25]
+WARNING: [Vivado 12-507] No nets matched 'u_gmii_to_rgmii/u_rgmii_rx/rgmii_txc'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:37]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:37]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[0]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[1]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[2]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[3]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[4]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[5]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[6]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[7]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[8]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[9]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[10]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[11]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[12]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[13]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[14]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[15]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[16]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[17]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[18]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[19]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[20]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[21]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[22]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[23]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[24]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[25]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[26]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[27]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[28]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[29]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[30]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_fifo_din[31]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:48]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[0]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[1]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[2]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[3]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[4]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[5]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[6]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[7]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[8]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[9]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[10]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[11]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[12]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[13]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[14]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/num[15]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:60]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[0]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[1]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[2]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[3]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[4]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[5]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[6]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[7]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[8]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[9]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[10]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[11]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[12]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[13]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[14]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/rec_byte_num[15]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:64]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[0]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[1]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[2]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[3]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[4]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[5]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[6]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[7]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[8]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[9]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[10]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[11]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[12]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[13]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[14]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[15]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[16]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[17]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[18]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[19]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[20]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[21]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[22]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[23]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[24]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[25]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[26]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[27]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[28]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[29]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[30]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/fpga2pc_fifo_din[31]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:68]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/tx_byte_num[0]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:76]
+WARNING: [Vivado 12-507] No nets matched 'u_fifo_ctrl/tx_byte_num[1]'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:76]
+INFO: [Common 17-14] Message 'Vivado 12-507' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:76]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:76]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:80]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:88]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:92]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:100]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc:104]
+Finished Parsing XDC File [D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.srcs/constrs_1/new/eth_udp_loop.xdc]
+INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list u_gmii_to_rgmii/u_rgmii_rx/gmii_rx_clk ]]
+set_property port_width 64 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_fifo_ctrl/tFpgaRead[0]} {u_fifo_ctrl/tFpgaRead[1]} {u_fifo_ctrl/tFpgaRead[2]} {u_fifo_ctrl/tFpgaRead[3]} {u_fifo_ctrl/tFpgaRead[4]} {u_fifo_ctrl/tFpgaRead[5]} {u_fifo_ctrl/tFpgaRead[6]} {u_fifo_ctrl/tFpgaRead[7]} {u_fifo_ctrl/tFpgaRead[8]} {u_fifo_ctrl/tFpgaRead[9]} {u_fifo_ctrl/tFpgaRead[10]} {u_fifo_ctrl/tFpgaRead[11]} {u_fifo_ctrl/tFpgaRead[12]} {u_fifo_ctrl/tFpgaRead[13]} {u_fifo_ctrl/tFpgaRead[14]} {u_fifo_ctrl/tFpgaRead[15]} {u_fifo_ctrl/tFpgaRead[16]} {u_fifo_ctrl/tFpgaRead[17]} {u_fifo_ctrl/tFpgaRead[18]} {u_fifo_ctrl/tFpgaRead[19]} {u_fifo_ctrl/tFpgaRead[20]} {u_fifo_ctrl/tFpgaRead[21]} {u_fifo_ctrl/tFpgaRead[22]} {u_fifo_ctrl/tFpgaRead[23]} {u_fifo_ctrl/tFpgaRead[24]} {u_fifo_ctrl/tFpgaRead[25]} {u_fifo_ctrl/tFpgaRead[26]} {u_fifo_ctrl/tFpgaRead[27]} {u_fifo_ctrl/tFpgaRead[28]} {u_fifo_ctrl/tFpgaRead[29]} {u_fifo_ctrl/tFpgaRead[30]} {u_fifo_ctrl/tFpgaRead[31]} {u_fifo_ctrl/tFpgaRead[32]} {u_fifo_ctrl/tFpgaRead[33]} {u_fifo_ctrl/tFpgaRead[34]} {u_fifo_ctrl/tFpgaRead[35]} {u_fifo_ctrl/tFpgaRead[36]} {u_fifo_ctrl/tFpgaRead[37]} {u_fifo_ctrl/tFpgaRead[38]} {u_fifo_ctrl/tFpgaRead[39]} {u_fifo_ctrl/tFpgaRead[40]} {u_fifo_ctrl/tFpgaRead[41]} {u_fifo_ctrl/tFpgaRead[42]} {u_fifo_ctrl/tFpgaRead[43]} {u_fifo_ctrl/tFpgaRead[44]} {u_fifo_ctrl/tFpgaRead[45]} {u_fifo_ctrl/tFpgaRead[46]} {u_fifo_ctrl/tFpgaRead[47]} {u_fifo_ctrl/tFpgaRead[48]} {u_fifo_ctrl/tFpgaRead[49]} {u_fifo_ctrl/tFpgaRead[50]} {u_fifo_ctrl/tFpgaRead[51]} {u_fifo_ctrl/tFpgaRead[52]} {u_fifo_ctrl/tFpgaRead[53]} {u_fifo_ctrl/tFpgaRead[54]} {u_fifo_ctrl/tFpgaRead[55]} {u_fifo_ctrl/tFpgaRead[56]} {u_fifo_ctrl/tFpgaRead[57]} {u_fifo_ctrl/tFpgaRead[58]} {u_fifo_ctrl/tFpgaRead[59]} {u_fifo_ctrl/tFpgaRead[60]} {u_fifo_ctrl/tFpgaRead[61]} {u_fifo_ctrl/tFpgaRead[62]} {u_fifo_ctrl/tFpgaRead[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_fifo_ctrl/tFpgaWrite[0]} {u_fifo_ctrl/tFpgaWrite[1]} {u_fifo_ctrl/tFpgaWrite[2]} {u_fifo_ctrl/tFpgaWrite[3]} {u_fifo_ctrl/tFpgaWrite[4]} {u_fifo_ctrl/tFpgaWrite[5]} {u_fifo_ctrl/tFpgaWrite[6]} {u_fifo_ctrl/tFpgaWrite[7]} {u_fifo_ctrl/tFpgaWrite[8]} {u_fifo_ctrl/tFpgaWrite[9]} {u_fifo_ctrl/tFpgaWrite[10]} {u_fifo_ctrl/tFpgaWrite[11]} {u_fifo_ctrl/tFpgaWrite[12]} {u_fifo_ctrl/tFpgaWrite[13]} {u_fifo_ctrl/tFpgaWrite[14]} {u_fifo_ctrl/tFpgaWrite[15]} {u_fifo_ctrl/tFpgaWrite[16]} {u_fifo_ctrl/tFpgaWrite[17]} {u_fifo_ctrl/tFpgaWrite[18]} {u_fifo_ctrl/tFpgaWrite[19]} {u_fifo_ctrl/tFpgaWrite[20]} {u_fifo_ctrl/tFpgaWrite[21]} {u_fifo_ctrl/tFpgaWrite[22]} {u_fifo_ctrl/tFpgaWrite[23]} {u_fifo_ctrl/tFpgaWrite[24]} {u_fifo_ctrl/tFpgaWrite[25]} {u_fifo_ctrl/tFpgaWrite[26]} {u_fifo_ctrl/tFpgaWrite[27]} {u_fifo_ctrl/tFpgaWrite[28]} {u_fifo_ctrl/tFpgaWrite[29]} {u_fifo_ctrl/tFpgaWrite[30]} {u_fifo_ctrl/tFpgaWrite[31]} {u_fifo_ctrl/tFpgaWrite[32]} {u_fifo_ctrl/tFpgaWrite[33]} {u_fifo_ctrl/tFpgaWrite[34]} {u_fifo_ctrl/tFpgaWrite[35]} {u_fifo_ctrl/tFpgaWrite[36]} {u_fifo_ctrl/tFpgaWrite[37]} {u_fifo_ctrl/tFpgaWrite[38]} {u_fifo_ctrl/tFpgaWrite[39]} {u_fifo_ctrl/tFpgaWrite[40]} {u_fifo_ctrl/tFpgaWrite[41]} {u_fifo_ctrl/tFpgaWrite[42]} {u_fifo_ctrl/tFpgaWrite[43]} {u_fifo_ctrl/tFpgaWrite[44]} {u_fifo_ctrl/tFpgaWrite[45]} {u_fifo_ctrl/tFpgaWrite[46]} {u_fifo_ctrl/tFpgaWrite[47]} {u_fifo_ctrl/tFpgaWrite[48]} {u_fifo_ctrl/tFpgaWrite[49]} {u_fifo_ctrl/tFpgaWrite[50]} {u_fifo_ctrl/tFpgaWrite[51]} {u_fifo_ctrl/tFpgaWrite[52]} {u_fifo_ctrl/tFpgaWrite[53]} {u_fifo_ctrl/tFpgaWrite[54]} {u_fifo_ctrl/tFpgaWrite[55]} {u_fifo_ctrl/tFpgaWrite[56]} {u_fifo_ctrl/tFpgaWrite[57]} {u_fifo_ctrl/tFpgaWrite[58]} {u_fifo_ctrl/tFpgaWrite[59]} {u_fifo_ctrl/tFpgaWrite[60]} {u_fifo_ctrl/tFpgaWrite[61]} {u_fifo_ctrl/tFpgaWrite[62]} {u_fifo_ctrl/tFpgaWrite[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_fifo_ctrl/tMaxPcLoop[0]} {u_fifo_ctrl/tMaxPcLoop[1]} {u_fifo_ctrl/tMaxPcLoop[2]} {u_fifo_ctrl/tMaxPcLoop[3]} {u_fifo_ctrl/tMaxPcLoop[4]} {u_fifo_ctrl/tMaxPcLoop[5]} {u_fifo_ctrl/tMaxPcLoop[6]} {u_fifo_ctrl/tMaxPcLoop[7]} {u_fifo_ctrl/tMaxPcLoop[8]} {u_fifo_ctrl/tMaxPcLoop[9]} {u_fifo_ctrl/tMaxPcLoop[10]} {u_fifo_ctrl/tMaxPcLoop[11]} {u_fifo_ctrl/tMaxPcLoop[12]} {u_fifo_ctrl/tMaxPcLoop[13]} {u_fifo_ctrl/tMaxPcLoop[14]} {u_fifo_ctrl/tMaxPcLoop[15]} {u_fifo_ctrl/tMaxPcLoop[16]} {u_fifo_ctrl/tMaxPcLoop[17]} {u_fifo_ctrl/tMaxPcLoop[18]} {u_fifo_ctrl/tMaxPcLoop[19]} {u_fifo_ctrl/tMaxPcLoop[20]} {u_fifo_ctrl/tMaxPcLoop[21]} {u_fifo_ctrl/tMaxPcLoop[22]} {u_fifo_ctrl/tMaxPcLoop[23]} {u_fifo_ctrl/tMaxPcLoop[24]} {u_fifo_ctrl/tMaxPcLoop[25]} {u_fifo_ctrl/tMaxPcLoop[26]} {u_fifo_ctrl/tMaxPcLoop[27]} {u_fifo_ctrl/tMaxPcLoop[28]} {u_fifo_ctrl/tMaxPcLoop[29]} {u_fifo_ctrl/tMaxPcLoop[30]} {u_fifo_ctrl/tMaxPcLoop[31]} {u_fifo_ctrl/tMaxPcLoop[32]} {u_fifo_ctrl/tMaxPcLoop[33]} {u_fifo_ctrl/tMaxPcLoop[34]} {u_fifo_ctrl/tMaxPcLoop[35]} {u_fifo_ctrl/tMaxPcLoop[36]} {u_fifo_ctrl/tMaxPcLoop[37]} {u_fifo_ctrl/tMaxPcLoop[38]} {u_fifo_ctrl/tMaxPcLoop[39]} {u_fifo_ctrl/tMaxPcLoop[40]} {u_fifo_ctrl/tMaxPcLoop[41]} {u_fifo_ctrl/tMaxPcLoop[42]} {u_fifo_ctrl/tMaxPcLoop[43]} {u_fifo_ctrl/tMaxPcLoop[44]} {u_fifo_ctrl/tMaxPcLoop[45]} {u_fifo_ctrl/tMaxPcLoop[46]} {u_fifo_ctrl/tMaxPcLoop[47]} {u_fifo_ctrl/tMaxPcLoop[48]} {u_fifo_ctrl/tMaxPcLoop[49]} {u_fifo_ctrl/tMaxPcLoop[50]} {u_fifo_ctrl/tMaxPcLoop[51]} {u_fifo_ctrl/tMaxPcLoop[52]} {u_fifo_ctrl/tMaxPcLoop[53]} {u_fifo_ctrl/tMaxPcLoop[54]} {u_fifo_ctrl/tMaxPcLoop[55]} {u_fifo_ctrl/tMaxPcLoop[56]} {u_fifo_ctrl/tMaxPcLoop[57]} {u_fifo_ctrl/tMaxPcLoop[58]} {u_fifo_ctrl/tMaxPcLoop[59]} {u_fifo_ctrl/tMaxPcLoop[60]} {u_fifo_ctrl/tMaxPcLoop[61]} {u_fifo_ctrl/tMaxPcLoop[62]} {u_fifo_ctrl/tMaxPcLoop[63]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 64 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_fifo_ctrl/tPcLoop[0]} {u_fifo_ctrl/tPcLoop[1]} {u_fifo_ctrl/tPcLoop[2]} {u_fifo_ctrl/tPcLoop[3]} {u_fifo_ctrl/tPcLoop[4]} {u_fifo_ctrl/tPcLoop[5]} {u_fifo_ctrl/tPcLoop[6]} {u_fifo_ctrl/tPcLoop[7]} {u_fifo_ctrl/tPcLoop[8]} {u_fifo_ctrl/tPcLoop[9]} {u_fifo_ctrl/tPcLoop[10]} {u_fifo_ctrl/tPcLoop[11]} {u_fifo_ctrl/tPcLoop[12]} {u_fifo_ctrl/tPcLoop[13]} {u_fifo_ctrl/tPcLoop[14]} {u_fifo_ctrl/tPcLoop[15]} {u_fifo_ctrl/tPcLoop[16]} {u_fifo_ctrl/tPcLoop[17]} {u_fifo_ctrl/tPcLoop[18]} {u_fifo_ctrl/tPcLoop[19]} {u_fifo_ctrl/tPcLoop[20]} {u_fifo_ctrl/tPcLoop[21]} {u_fifo_ctrl/tPcLoop[22]} {u_fifo_ctrl/tPcLoop[23]} {u_fifo_ctrl/tPcLoop[24]} {u_fifo_ctrl/tPcLoop[25]} {u_fifo_ctrl/tPcLoop[26]} {u_fifo_ctrl/tPcLoop[27]} {u_fifo_ctrl/tPcLoop[28]} {u_fifo_ctrl/tPcLoop[29]} {u_fifo_ctrl/tPcLoop[30]} {u_fifo_ctrl/tPcLoop[31]} {u_fifo_ctrl/tPcLoop[32]} {u_fifo_ctrl/tPcLoop[33]} {u_fifo_ctrl/tPcLoop[34]} {u_fifo_ctrl/tPcLoop[35]} {u_fifo_ctrl/tPcLoop[36]} {u_fifo_ctrl/tPcLoop[37]} {u_fifo_ctrl/tPcLoop[38]} {u_fifo_ctrl/tPcLoop[39]} {u_fifo_ctrl/tPcLoop[40]} {u_fifo_ctrl/tPcLoop[41]} {u_fifo_ctrl/tPcLoop[42]} {u_fifo_ctrl/tPcLoop[43]} {u_fifo_ctrl/tPcLoop[44]} {u_fifo_ctrl/tPcLoop[45]} {u_fifo_ctrl/tPcLoop[46]} {u_fifo_ctrl/tPcLoop[47]} {u_fifo_ctrl/tPcLoop[48]} {u_fifo_ctrl/tPcLoop[49]} {u_fifo_ctrl/tPcLoop[50]} {u_fifo_ctrl/tPcLoop[51]} {u_fifo_ctrl/tPcLoop[52]} {u_fifo_ctrl/tPcLoop[53]} {u_fifo_ctrl/tPcLoop[54]} {u_fifo_ctrl/tPcLoop[55]} {u_fifo_ctrl/tPcLoop[56]} {u_fifo_ctrl/tPcLoop[57]} {u_fifo_ctrl/tPcLoop[58]} {u_fifo_ctrl/tPcLoop[59]} {u_fifo_ctrl/tPcLoop[60]} {u_fifo_ctrl/tPcLoop[61]} {u_fifo_ctrl/tPcLoop[62]} {u_fifo_ctrl/tPcLoop[63]} ]]
+save_constraints
+launch_runs impl_1 -jobs 20
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.025 . Memory (MB): peak = 4083.715 ; gain = 0.000
+[Thu Aug  3 17:01:39 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 20
+[Thu Aug  3 17:04:58 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/runme.log
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {u_fifo_ctrl/tFpgaRead} }
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 17:08:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 17:08:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 17:08:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 17:08:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 17:08:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 17:08:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 17:25:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 17:25:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 17:25:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 17:25:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 17:25:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 17:25:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
 ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
 WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
 WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
-set_property FULL_PROBES.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
-set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
 program_hw_devices [get_hw_devices xc7z020_1]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
 INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
 display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
-save_wave_config {C:/Users/Administrator/Desktop/udpLoop/21_eth_udp_loop/eth_udp_loop.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 17:43:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 17:43:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.runs/impl_1/eth_udp_loop.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Aug-03 17:44:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Aug-03 17:44:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_loop/eth_udp_loop.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Aug  2 16:46:26 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  3 17:47:21 2023...

@@ -1,6 +1,7 @@
 ﻿#include "threadloopsync.h"
 #include <QTime>
 #include <QDebug>
+#include <windows.h>
 
 #define NUM_DATA_LOOP 1024
 ThreadLoopSync::ThreadLoopSync()
@@ -31,6 +32,9 @@ bool ThreadLoopSync::setUdpSocket(QUdpSocket *udpSocket, QHostAddress targetAddr
 //线程任务
 void ThreadLoopSync::run()
 {
+    qDebug()  << "ThreadLoopSync Thread ID:"<< QThread::currentThreadId();
+    SetThreadAffinityMask(GetCurrentThread(), 0x40); //强制分配到第7个CPU核运行
+
     QByteArray bufferInput(NUM_DATA_LOOP, 0);
     QByteArray bufferOutput(NUM_DATA_LOOP, 0);
 
@@ -149,10 +153,14 @@ void ThreadLoopSync::run()
 
                 //--------------------------------------------------------
                 //tPcLoop时长计算
-                m_tPcLoop = ((bufferInput[11]<<8*3)
-                       +(bufferInput[10]<<8*2)
-                       +(bufferInput[9]<<8*1)
-                       +(bufferInput[8]))/100;      //us
+                m_tPcLoop = (((quint64)bufferInput[8]<<8*7)
+                       +((quint64)bufferInput[9]<<8*6)
+                       +((quint64)bufferInput[10]<<8*5)
+                       +((quint64)bufferInput[11]<<8*4)
+                       +((quint64)bufferInput[12]<<8*3)
+                       +((quint64)bufferInput[13]<<8*2)
+                       +((quint64)bufferInput[14]<<8*1)
+                       +((quint64)bufferInput[15]))/125;      //us
 
                 //至少跳过最早的2个tPcLoop值
                 //因为在第一个为之前的计算值，第二个由于中间暂停所以数值很大不正确

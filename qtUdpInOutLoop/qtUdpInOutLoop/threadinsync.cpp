@@ -1,6 +1,7 @@
 ﻿#include "threadinsync.h"
 #include <QTime>
 #include <QDebug>
+#include <windows.h>
 
 #define NUM_DATA_IN 1024
 ThreadInSync::ThreadInSync()
@@ -32,8 +33,10 @@ bool ThreadInSync::setUdpSocket(QUdpSocket *udpSocket, QHostAddress targetAddr, 
 //线程任务
 void ThreadInSync::run()
 {
-    QByteArray bufferInput(NUM_DATA_IN, 0);
+    qDebug()  << "ThreadInSync Thread ID:"<< QThread::currentThreadId();
+    SetThreadAffinityMask(GetCurrentThread(), 0x20);   //强制分配到第6个CPU核运行
 
+    QByteArray bufferInput(NUM_DATA_IN, 0);
     long readLength=0;
     m_inBytes=0;
     m_inSeccesses=0;

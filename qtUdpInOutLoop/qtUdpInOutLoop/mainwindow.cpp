@@ -25,6 +25,9 @@ MainWindow::MainWindow(QWidget *parent)
     udpSocket = new QUdpSocket(this);
     connect(udpSocket,SIGNAL(stateChanged(QAbstractSocket::SocketState)),this,SLOT(slot_udpSocket_stateChanged(QAbstractSocket::SocketState)));
     slot_udpSocket_stateChanged(udpSocket->state());    //更新Socket状态
+
+    qDebug()  << "mainwindow Thread ID:"<< QThread::currentThreadId();
+
 }
 
 // 显示本地所有IPv4地址

@@ -1,6 +1,7 @@
 ﻿#include "threadoutsync.h"
 #include <QTime>
 #include <QDebug>
+#include <windows.h>
 
 #define NUM_DATA_OUT 1024
 
@@ -32,6 +33,9 @@ bool ThreadOutSync::setUdpSocket(QUdpSocket *udpSocket, QHostAddress targetAddr,
 //线程任务
 void ThreadOutSync::run()
 {
+    qDebug()  << "ThreadOutSync Thread ID:"<< QThread::currentThreadId();
+    SetThreadAffinityMask(GetCurrentThread(), 0x80); //强制分配到第8个CPU核运行
+
     // 申请缓存器，用来存储OutData
     QByteArray bufferOutput(NUM_DATA_OUT, 0);
     long writeLength=0;
