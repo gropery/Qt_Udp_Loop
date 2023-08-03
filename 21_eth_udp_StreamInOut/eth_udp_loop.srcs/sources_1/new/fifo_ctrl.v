@@ -55,8 +55,10 @@ reg [63:0] tFpgaToPcEnd;		//FPGA写入CP上传数据结束
 reg catch;							//计算各个时间段的节点
 reg [2:0] state;
 reg [15:0] num;
+reg [7:0] inCounter;
+reg [63:0] inChechWrongCnt;
 
-
+// 连续读取PC发送过来的数据
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n) begin
         tPcToFpgaEnd <= 0;
@@ -65,15 +67,14 @@ always @(posedge clk or negedge rst_n) begin
         catch <= 1'b0;
         state <= 0;
         num <= 0;
-        fpga2pc_fifo_wren <= 0;
         pc2fpga_fifo_rden <= 0;
+        inCounter <= 0;
+        inChechWrongCnt <= 0;
     end
     else begin
         case(state)
         0: begin
-            catch <= 1'b0;
             if (rec_pkt_done) begin
-                tPcToFpgaEnd <= timerCnt;
                 pc2fpga_fifo_rden <= 1; //提前一个时钟开始
                 state <= state + 1;
             end
@@ -86,49 +87,20 @@ always @(posedge clk or negedge rst_n) begin
         2: begin
             if (num >= rec_byte_num/4) begin
                 num <= 0;
-                fpga2pc_fifo_wren <= 0;
-                state <= state + 1;
+                inCounter <= pc2fpga_fifo_dout[7:0] + 1;
+                state <= 0;
             end
             else begin
                 num <= num + 1'b1;
-                fpga2pc_fifo_wren <= 1;
-                
-                if (num == 1) begin
-                    fpga2pc_fifo_din <= 32'h12_34_56_78;		//大小端测试，实际在PC端会是buf[4]=0x12
-                                                                //                        buf[5]=0x34
-                                                                //                        buf[6]=0x56
-                                                                //                        buf[7]=0x78
+
+                if (pc2fpga_fifo_dout!={inCounter,inCounter,inCounter,inCounter}) begin
+                    inChechWrongCnt <= inChechWrongCnt + 1;
                 end
-				else if (num == 32'd2) begin    
-					fpga2pc_fifo_din = tPcLoop[63:32];      
-				end
-				else if (num == 32'd3) begin
-					fpga2pc_fifo_din = tPcLoop[31:0];
-				end 
-				else begin
-					fpga2pc_fifo_din <= pc2fpga_fifo_dout;
-				end
 
                 if(num >= rec_byte_num/4-2) 
                     pc2fpga_fifo_rden <= 0; //提前一个时钟结束
                 else 
                     pc2fpga_fifo_rden <= 1;
-            end
-        end
-
-        3: begin
-            tFpgaToPcStart <= timerCnt;
-            tx_byte_num <= rec_byte_num;
-            tx_start_en <= 1;
-            state <= state + 1;
-        end
-
-        4: begin
-            tx_start_en <= 0;
-            if (tx_pkt_done) begin
-                tFpgaToPcEnd <= timerCnt;
-                catch <= 1'b1;
-                state <= 0;
             end
         end
 
@@ -139,6 +111,58 @@ always @(posedge clk or negedge rst_n) begin
         endcase
     end
 end
+
+
+reg [2:0] outState;
+reg [15:0] outNum;
+reg [7:0] outCounter;
+parameter  TX_BYTE_NUM = 16'd1024;  
+
+// 连续发送数据到PC
+always @(posedge clk or negedge rst_n) begin
+    if(!rst_n) begin
+        outState <= 0;
+        outNum <= 0;
+        outCounter <= 0;
+        fpga2pc_fifo_wren <= 0;
+    end
+    else begin
+        case(outState)
+        0: begin
+            if (outNum >= TX_BYTE_NUM/4) begin
+                outNum <= 0;
+                outCounter <= outCounter + 1;
+                fpga2pc_fifo_wren <= 0;
+                outState <= outState + 1;
+            end
+            else begin
+                outNum <= outNum + 1'b1;
+                fpga2pc_fifo_wren <= 1;
+			    fpga2pc_fifo_din <= {outCounter,outCounter,outCounter,outCounter};
+            end
+        end
+
+        1: begin
+            tx_byte_num <= TX_BYTE_NUM;
+            tx_start_en <= 1;
+            outState <= outState + 1;
+        end
+
+        2: begin
+            tx_start_en <= 0;
+            if (tx_pkt_done) begin
+                outState <= 0;
+            end
+        end
+
+        default begin
+            outState <= 0;
+        end
+
+        endcase
+    end
+end
+
 
 reg [63:0] tCurPcToFpgaEnd;
 reg [63:0] tCurFpgaToPcStart;
