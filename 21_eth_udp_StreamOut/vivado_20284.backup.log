@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug  4 08:25:50 2023
+# Process ID: 20284
+# Current directory: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut
+# Command line: vivado.exe D:\Project\Qt5Proj\win10\udpLoop\Qt_Udp_Loop\21_eth_udp_StreamInOut\eth_udp_loop.xpr
+# Log file: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut/vivado.log
+# Journal file: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut/eth_udp_loop.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 20
+[Fri Aug  4 08:28:57 2023] Launched impl_1...
+Run output will be captured here: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut/eth_udp_loop.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  4 08:31:32 2023...

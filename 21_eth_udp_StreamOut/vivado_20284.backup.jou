@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Aug  4 08:25:50 2023
+# Process ID: 20284
+# Current directory: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut
+# Command line: vivado.exe D:\Project\Qt5Proj\win10\udpLoop\Qt_Udp_Loop\21_eth_udp_StreamInOut\eth_udp_loop.xpr
+# Log file: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut/vivado.log
+# Journal file: D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut/eth_udp_loop.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 20
+wait_on_run impl_1

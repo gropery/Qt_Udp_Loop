@@ -1,0 +1,31 @@
+$date
+        2023-Aug-03 17:44:01
+$end
+$version
+        Vivado v2020.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 64 " u_fifo_ctrl/tFpgaRead [63:0] $end
+$var reg 64 b u_fifo_ctrl/tFpgaWrite [63:0] $end
+$var reg 64 D" u_fifo_ctrl/tMaxPcLoop [63:0] $end
+$var reg 64 &# u_fifo_ctrl/tPcLoop [63:0] $end
+$var reg 1 f# _TRIGGER $end
+$var reg 1 g# _WINDOW $end
+$var reg 1 h# _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100000011 "
+b10000111111 b
+b10111100010000000110 D"
+b10111000000011011 &#
+0f#
+1g#
+0h#
+$end
+#512
+1f#
