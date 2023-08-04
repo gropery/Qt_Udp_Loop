@@ -23,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     // 新建UDP socket
     udpSocket = new QUdpSocket(this);
+    udpSocket->setReadBufferSize(16*1024*1024);
     connect(udpSocket,SIGNAL(stateChanged(QAbstractSocket::SocketState)),this,SLOT(slot_udpSocket_stateChanged(QAbstractSocket::SocketState)));
     slot_udpSocket_stateChanged(udpSocket->state());    //更新Socket状态
 
