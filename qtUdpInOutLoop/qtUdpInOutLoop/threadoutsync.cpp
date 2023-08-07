@@ -64,7 +64,7 @@ void ThreadOutSync::run()
         }
         else
         {
-            qDebug()<<"threadoutsync.cpp: send err";
+//            qDebug()<<"threadoutsync.cpp: send err";
             m_outFailures++;
         }
         //qDebug()<<m_outBytes;

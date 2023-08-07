@@ -153,19 +153,19 @@ void ThreadLoopSync::run()
 
                 //--------------------------------------------------------
                 //tPcLoop时长计算
-                m_tPcLoop = (((quint64)bufferInput[8]<<8*7)
-                       +((quint64)bufferInput[9]<<8*6)
-                       +((quint64)bufferInput[10]<<8*5)
-                       +((quint64)bufferInput[11]<<8*4)
-                       +((quint64)bufferInput[12]<<8*3)
-                       +((quint64)bufferInput[13]<<8*2)
-                       +((quint64)bufferInput[14]<<8*1)
-                       +((quint64)bufferInput[15]))/125;      //us
+                m_tPcLoop = (((uint64_t)((uint8_t)bufferInput[8])<<8*7)
+                            +((uint64_t)((uint8_t)bufferInput[9])<<8*6)
+                            +((uint64_t)((uint8_t)bufferInput[10])<<8*5)
+                            +((uint64_t)((uint8_t)bufferInput[11])<<8*4)
+                            +((uint64_t)((uint8_t)bufferInput[12])<<8*3)
+                            +((uint64_t)((uint8_t)bufferInput[13])<<8*2)
+                            +((uint64_t)((uint8_t)bufferInput[14])<<8*1)
+                            +((uint64_t)((uint8_t)bufferInput[15])))/125;
 
                 //至少跳过最早的2个tPcLoop值
                 //因为在第一个为之前的计算值，第二个由于中间暂停所以数值很大不正确
                 //第三个已经是正确的值了，这里选择3只是为了调试
-                if(runTimes>=3)
+                if(runTimes>=100)
                 {
                     //查找最大时间
                     if(m_tMaxPcLoop < m_tPcLoop)
@@ -178,6 +178,30 @@ void ThreadLoopSync::run()
                 }
                 else
                 {
+                    if(m_tPcLoop > 1000000000)
+                    {
+                        qDebug()<<"=====================";
+                        quint64 m_tPcLoopx = ((uint64_t)((uint8_t)bufferInput[8])<<8*7)
+                                            +((uint64_t)((uint8_t)bufferInput[9])<<8*6)
+                                            +((uint64_t)((uint8_t)bufferInput[10])<<8*5)
+                                            +((uint64_t)((uint8_t)bufferInput[11])<<8*4)
+                                            +((uint64_t)((uint8_t)bufferInput[12])<<8*3)
+                                            +((uint64_t)((uint8_t)bufferInput[13])<<8*2)
+                                            +((uint64_t)((uint8_t)bufferInput[14])<<8*1)
+                                            +((uint64_t)((uint8_t)bufferInput[15]));
+
+                        qDebug()<<QString().asprintf("%x", m_tPcLoopx);
+
+                        qDebug()<<QString().asprintf("%02x",(uint8_t)bufferInput[8]);
+                        qDebug()<<QString().asprintf("%02x",(uint8_t)bufferInput[9]);
+                        qDebug()<<QString().asprintf("%02x",(uint8_t)bufferInput[10]);
+                        qDebug()<<QString().asprintf("%02x",(uint8_t)bufferInput[11]);
+                        qDebug()<<QString().asprintf("%02x",(uint8_t)bufferInput[12]);
+                        qDebug()<<QString().asprintf("%02x",(uint8_t)bufferInput[13]);
+                        qDebug()<<QString().asprintf("%02x",(uint8_t)bufferInput[14]);
+                        qDebug()<<QString().asprintf("%02x",(uint8_t)bufferInput[15]);
+                        qDebug()<<"=====================";
+                    }
                     qDebug()<<"runTimes="<<runTimes<<", m_tPcLoop(us)="<<m_tPcLoop;
                     runTimes++;
                 }
