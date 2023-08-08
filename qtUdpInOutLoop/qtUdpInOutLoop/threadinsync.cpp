@@ -34,7 +34,7 @@ bool ThreadInSync::setUdpSocket(QUdpSocket *udpSocket, QHostAddress targetAddr, 
 void ThreadInSync::run()
 {
     qDebug()  << "ThreadInSync Thread ID:"<< QThread::currentThreadId();
-    SetThreadAffinityMask(GetCurrentThread(), 0x20);   //强制分配到第6个CPU核运行
+    //SetThreadAffinityMask(GetCurrentThread(), 0x20);   //强制分配到第6个CPU核运行
 
     QByteArray bufferInput(NUM_DATA_IN, 0);
     long readLength=0;

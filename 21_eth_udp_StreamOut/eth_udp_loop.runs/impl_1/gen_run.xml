@@ -1,81 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1691119434">
-  <File Type="OPT-HWDEF" Name="eth_udp_loop.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="eth_udp_loop_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="eth_udp_loop.dcp"/>
-  <File Type="BITSTR-BMM" Name="eth_udp_loop_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="eth_udp_loop_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="eth_udp_loop_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="eth_udp_loop_power_routed.rpt"/>
   <File Type="PA-TCL" Name="eth_udp_loop.tcl"/>
-  <File Type="OPT-TIMING" Name="eth_udp_loop_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="eth_udp_loop_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="eth_udp_loop_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="eth_udp_loop_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="eth_udp_loop.msk"/>
+  <File Type="ROUTE-CLK" Name="eth_udp_loop_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="eth_udp_loop.vdi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="eth_udp_loop_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="eth_udp_loop.dcp"/>
+  <File Type="BG-BIT" Name="eth_udp_loop.bit"/>
+  <File Type="BG-DRC" Name="eth_udp_loop.drc"/>
+  <File Type="BG-BGN" Name="eth_udp_loop.bgn"/>
+  <File Type="BG-BIN" Name="eth_udp_loop.bin"/>
+  <File Type="BITSTR-RBT" Name="eth_udp_loop.rbt"/>
+  <File Type="BITSTR-NKY" Name="eth_udp_loop.nky"/>
+  <File Type="BITSTR-BMM" Name="eth_udp_loop_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="eth_udp_loop.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="eth_udp_loop.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="eth_udp_loop.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="eth_udp_loop_drc_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="eth_udp_loop_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="eth_udp_loop_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="eth_udp_loop_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="eth_udp_loop_placed.dcp"/>
+  <File Type="OPT-HWDEF" Name="eth_udp_loop.hwdef"/>
   <File Type="PLACE-IO" Name="eth_udp_loop_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="eth_udp_loop_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="eth_udp_loop_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="eth_udp_loop_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="eth_udp_loop_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="eth_udp_loop_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="eth_udp_loop_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="eth_udp_loop_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="eth_udp_loop_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="eth_udp_loop.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="eth_udp_loop_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="eth_udp_loop_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="eth_udp_loop_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="eth_udp_loop.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="eth_udp_loop_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="eth_udp_loop_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="eth_udp_loop_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="eth_udp_loop_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="eth_udp_loop_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="eth_udp_loop_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="eth_udp_loop_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="eth_udp_loop.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="eth_udp_loop_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="eth_udp_loop_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="eth_udp_loop_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="eth_udp_loop_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="eth_udp_loop_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="eth_udp_loop_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="eth_udp_loop_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="eth_udp_loop_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="eth_udp_loop_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="eth_udp_loop_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="eth_udp_loop_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="eth_udp_loop_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="eth_udp_loop_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="eth_udp_loop_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="eth_udp_loop_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="eth_udp_loop_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="eth_udp_loop_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="eth_udp_loop_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="eth_udp_loop_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="eth_udp_loop_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="eth_udp_loop_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="eth_udp_loop_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="eth_udp_loop_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="eth_udp_loop_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="eth_udp_loop_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="eth_udp_loop_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="eth_udp_loop_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="eth_udp_loop_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="eth_udp_loop.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="eth_udp_loop_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="eth_udp_loop.rbt"/>
-  <File Type="BITSTR-NKY" Name="eth_udp_loop.nky"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="eth_udp_loop_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="eth_udp_loop_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="eth_udp_loop_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="eth_udp_loop_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="eth_udp_loop.pdi"/>
   <File Type="RCFI_FILE" Name="eth_udp_loop.rcfi"/>
   <File Type="CFI_FILE" Name="eth_udp_loop.cfi"/>
   <File Type="RNPI_FILE" Name="eth_udp_loop.rnpi"/>
   <File Type="NPI_FILE" Name="eth_udp_loop.npi"/>
   <File Type="RBD_FILE" Name="eth_udp_loop.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="eth_udp_loop.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="eth_udp_loop.sysdef"/>
-  <File Type="BG-BGN" Name="eth_udp_loop.bgn"/>
-  <File Type="BG-DRC" Name="eth_udp_loop.drc"/>
-  <File Type="RDI-RDI" Name="eth_udp_loop.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/arp/arp.v">

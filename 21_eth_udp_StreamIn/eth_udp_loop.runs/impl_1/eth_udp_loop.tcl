@@ -117,146 +117,16 @@ OPTRACE "impl_1" END { }
 
 
 OPTRACE "impl_1" START { ROLLUP_1 }
-OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
-start_step init_design
-set ACTIVE_STEP init_design
-set rc [catch {
-  create_msg_db init_design.pb
-  set_param chipscope.maxJobs 5
-  reset_param project.defaultXPMLibraries 
-  open_checkpoint D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamIn/eth_udp_loop.runs/impl_1/eth_udp_loop.dcp
-  set_property webtalk.parent_dir D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamIn/eth_udp_loop.cache/wt [current_project]
-  set_property parent.project_path D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamIn/eth_udp_loop.xpr [current_project]
-  set_property ip_output_repo D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamIn/eth_udp_loop.cache/ip [current_project]
-  set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-OPTRACE "init_design_reports" START { REPORT }
-OPTRACE "init_design_reports" END { }
-OPTRACE "init_design_write_hwdef" START { }
-OPTRACE "init_design_write_hwdef" END { }
-  close_msg_db -file init_design.pb
-} RESULT]
-if {$rc} {
-  step_failed init_design
-  return -code error $RESULT
-} else {
-  end_step init_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Init Design" END { }
-OPTRACE "Phase: Opt Design" START { ROLLUP_AUTO }
-start_step opt_design
-set ACTIVE_STEP opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-OPTRACE "read constraints: opt_design" START { }
-OPTRACE "read constraints: opt_design" END { }
-OPTRACE "opt_design" START { }
-  opt_design 
-OPTRACE "opt_design" END { }
-OPTRACE "read constraints: opt_design_post" START { }
-OPTRACE "read constraints: opt_design_post" END { }
-OPTRACE "Opt Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force eth_udp_loop_opt.dcp
-OPTRACE "Opt Design: write_checkpoint" END { }
-OPTRACE "opt_design reports" START { REPORT }
-  create_report "impl_1_opt_report_drc_0" "report_drc -file eth_udp_loop_drc_opted.rpt -pb eth_udp_loop_drc_opted.pb -rpx eth_udp_loop_drc_opted.rpx"
-OPTRACE "opt_design reports" END { }
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Opt Design" END { }
-OPTRACE "Phase: Place Design" START { ROLLUP_AUTO }
-start_step place_design
-set ACTIVE_STEP place_design
-set rc [catch {
-  create_msg_db place_design.pb
-OPTRACE "read constraints: place_design" START { }
-OPTRACE "read constraints: place_design" END { }
-  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
-OPTRACE "implement_debug_core" START { }
-    implement_debug_core 
-OPTRACE "implement_debug_core" END { }
-  } 
-OPTRACE "place_design" START { }
-  place_design 
-OPTRACE "place_design" END { }
-OPTRACE "read constraints: place_design_post" START { }
-OPTRACE "read constraints: place_design_post" END { }
-OPTRACE "Place Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force eth_udp_loop_placed.dcp
-OPTRACE "Place Design: write_checkpoint" END { }
-OPTRACE "place_design reports" START { REPORT }
-  create_report "impl_1_place_report_io_0" "report_io -file eth_udp_loop_io_placed.rpt"
-  create_report "impl_1_place_report_utilization_0" "report_utilization -file eth_udp_loop_utilization_placed.rpt -pb eth_udp_loop_utilization_placed.pb"
-  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file eth_udp_loop_control_sets_placed.rpt"
-OPTRACE "place_design reports" END { }
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "Phase: Place Design" END { }
-OPTRACE "Phase: Route Design" START { ROLLUP_AUTO }
-start_step route_design
-set ACTIVE_STEP route_design
-set rc [catch {
-  create_msg_db route_design.pb
-OPTRACE "read constraints: route_design" START { }
-OPTRACE "read constraints: route_design" END { }
-OPTRACE "route_design" START { }
-  route_design 
-OPTRACE "route_design" END { }
-OPTRACE "read constraints: route_design_post" START { }
-OPTRACE "read constraints: route_design_post" END { }
-OPTRACE "Route Design: write_checkpoint" START { CHECKPOINT }
-  write_checkpoint -force eth_udp_loop_routed.dcp
-OPTRACE "Route Design: write_checkpoint" END { }
-OPTRACE "route_design reports" START { REPORT }
-  create_report "impl_1_route_report_drc_0" "report_drc -file eth_udp_loop_drc_routed.rpt -pb eth_udp_loop_drc_routed.pb -rpx eth_udp_loop_drc_routed.rpx"
-  create_report "impl_1_route_report_methodology_0" "report_methodology -file eth_udp_loop_methodology_drc_routed.rpt -pb eth_udp_loop_methodology_drc_routed.pb -rpx eth_udp_loop_methodology_drc_routed.rpx"
-  create_report "impl_1_route_report_power_0" "report_power -file eth_udp_loop_power_routed.rpt -pb eth_udp_loop_power_summary_routed.pb -rpx eth_udp_loop_power_routed.rpx"
-  create_report "impl_1_route_report_route_status_0" "report_route_status -file eth_udp_loop_route_status.rpt -pb eth_udp_loop_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file eth_udp_loop_timing_summary_routed.rpt -pb eth_udp_loop_timing_summary_routed.pb -rpx eth_udp_loop_timing_summary_routed.rpx -warn_on_violation "
-  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file eth_udp_loop_incremental_reuse_routed.rpt"
-  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file eth_udp_loop_clock_utilization_routed.rpt"
-  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file eth_udp_loop_bus_skew_routed.rpt -pb eth_udp_loop_bus_skew_routed.pb -rpx eth_udp_loop_bus_skew_routed.rpx"
-OPTRACE "route_design reports" END { }
-OPTRACE "route_design misc" START { }
-  close_msg_db -file route_design.pb
-OPTRACE "route_design write_checkpoint" START { CHECKPOINT }
-OPTRACE "route_design write_checkpoint" END { }
-} RESULT]
-if {$rc} {
-  write_checkpoint -force eth_udp_loop_routed_error.dcp
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
-  unset ACTIVE_STEP 
-}
-
-OPTRACE "route_design misc" END { }
-OPTRACE "Phase: Route Design" END { }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
 OPTRACE "write_bitstream setup" START { }
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param chipscope.maxJobs 5
+  open_checkpoint eth_udp_loop_routed.dcp
+  set_property webtalk.parent_dir D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamIn/eth_udp_loop.cache/wt [current_project]
+set_property TOP eth_udp_loop [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]

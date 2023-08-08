@@ -34,7 +34,7 @@ bool ThreadOutSync::setUdpSocket(QUdpSocket *udpSocket, QHostAddress targetAddr,
 void ThreadOutSync::run()
 {
     qDebug()  << "ThreadOutSync Thread ID:"<< QThread::currentThreadId();
-    SetThreadAffinityMask(GetCurrentThread(), 0x80); //强制分配到第8个CPU核运行
+    //SetThreadAffinityMask(GetCurrentThread(), 0x80); //强制分配到第8个CPU核运行
 
     // 申请缓存器，用来存储OutData
     QByteArray bufferOutput(NUM_DATA_OUT, 0);

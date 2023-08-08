@@ -23,7 +23,7 @@
     <Object name="u_fifo_ctrl/state[2:0]" gui_info=""/>
   </ObjectList>
   <probeset name="hw project" active="false">
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -96,7 +96,7 @@
         <net name="u_fifo_ctrl/fpga2pc_fifo_wren"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
@@ -132,7 +132,7 @@
         <net name="u_fifo_ctrl/num[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -205,7 +205,7 @@
         <net name="u_fifo_ctrl/pc2fpga_fifo_rden"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
@@ -241,7 +241,7 @@
         <net name="u_fifo_ctrl/rec_byte_num[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>
@@ -335,7 +335,7 @@
         <net name="u_fifo_ctrl/rec_pkt_done"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq3&apos;hX"/>
         <Option Id="COMPARE_VALUE.0" value="eq3&apos;hX"/>
@@ -699,7 +699,7 @@
         <net name="u_fifo_ctrl/tPcLoop[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq16&apos;hXXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq16&apos;hXXXX"/>
@@ -735,7 +735,7 @@
         <net name="u_fifo_ctrl/tx_byte_num[0]"/>
       </nets>
     </probe>
-    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="CAPTURE_COMPARE_VALUE" value="eq32&apos;hXXXX_XXXX"/>
         <Option Id="COMPARE_VALUE.0" value="eq32&apos;hXXXX_XXXX"/>

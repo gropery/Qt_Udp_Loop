@@ -3,23 +3,21 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamInOut/eth_udp_loop.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="D:/Project/Qt5Proj/win10/udpLoop/Qt_Udp_Loop/21_eth_udp_StreamOut/eth_udp_loop.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1025fs"></ZoomEndTime>
+      <ZoomEndTime time="6fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="365"></NameColumnWidth>
-      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="11" />
-   <wave_markers>
-   </wave_markers>
    <wvobject fp_name="u_fifo_ctrl/tFpgaRead" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">u_fifo_ctrl/tFpgaRead[63:0]</obj_property>

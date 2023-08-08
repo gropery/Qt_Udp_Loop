@@ -33,7 +33,7 @@ bool ThreadLoopSync::setUdpSocket(QUdpSocket *udpSocket, QHostAddress targetAddr
 void ThreadLoopSync::run()
 {
     qDebug()  << "ThreadLoopSync Thread ID:"<< QThread::currentThreadId();
-    SetThreadAffinityMask(GetCurrentThread(), 0x40); //强制分配到第7个CPU核运行
+    //SetThreadAffinityMask(GetCurrentThread(), 0x40); //强制分配到第7个CPU核运行
 
     QByteArray bufferInput(NUM_DATA_LOOP, 0);
     QByteArray bufferOutput(NUM_DATA_LOOP, 0);

@@ -28,7 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     slot_udpSocket_stateChanged(udpSocket->state());    //更新Socket状态
 
     qDebug()  << "mainwindow Thread ID:"<< QThread::currentThreadId();
-    SetThreadAffinityMask(GetCurrentThread(), 0x10); //强制分配到第8个CPU核运行
+    //SetThreadAffinityMask(GetCurrentThread(), 0x10); //强制分配到第8个CPU核运行
 
 }
 
